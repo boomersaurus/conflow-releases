@@ -1,15 +1,15 @@
 {
-  "version": "1.0.4",
-  "notes": "Universal-Paket fuer Intel- und Apple-Silicon-Macs.",
-  "pub_date": "2026-07-29T09:05:15Z",
+  "version": "1.1.0",
+  "notes": "Rueckfrage vor dem Entfernen des Lizenzschluessels. Auto-Update ueber eigenen Kanal.",
+  "pub_date": "2026-07-29T09:14:09Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1F2a09wUkptVnNTamNKV1hIMEphNWxnQndjTTVLZjF4ZVFtWjJwbDZaQUZWdDBpY25ucjBKNmsyaEFvaVRFU1BoS2VuMjZ0bWFUWGt4MVB3MUpKSVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzE1ODc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Ck0zRTdEVEFGeE1pZ0pLTFUvZWh1bnJZVnc1SnFJN3VqVjhjaU90OW9VajNsZEVEdVBuL0U2a1RXY3JTam9YM3lFVy9BcmxwOSt2ZzcxVVRHMnpUVEJ3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.0.4/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dmc2ZQK1pVbXp4cmVOaXoyRW5JU1d2eVZpRFNoM2c2bXAzd3h0N3RsRTVheTI4dlJibngwT3VzbndCZlFhZEtsZGFuaEg1dlRzOWFEUnFrNXF2OHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzE2NDA1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Cm9jNzV0b0NVSm44OUVLektDRVMrVDg0dWJGN21HQjJxblM0MENib0IvTE9yNUd5WlpTWGtodW55TklaVVgwbDZac1QzM2VkbWVKVmNWeHNQOWpzN0FBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.1.0/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1F2a09wUkptVnNTamNKV1hIMEphNWxnQndjTTVLZjF4ZVFtWjJwbDZaQUZWdDBpY25ucjBKNmsyaEFvaVRFU1BoS2VuMjZ0bWFUWGt4MVB3MUpKSVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzE1ODc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Ck0zRTdEVEFGeE1pZ0pLTFUvZWh1bnJZVnc1SnFJN3VqVjhjaU90OW9VajNsZEVEdVBuL0U2a1RXY3JTam9YM3lFVy9BcmxwOSt2ZzcxVVRHMnpUVEJ3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.0.4/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dmc2ZQK1pVbXp4cmVOaXoyRW5JU1d2eVZpRFNoM2c2bXAzd3h0N3RsRTVheTI4dlJibngwT3VzbndCZlFhZEtsZGFuaEg1dlRzOWFEUnFrNXF2OHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzE2NDA1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Cm9jNzV0b0NVSm44OUVLektDRVMrVDg0dWJGN21HQjJxblM0MENib0IvTE9yNUd5WlpTWGtodW55TklaVVgwbDZac1QzM2VkbWVKVmNWeHNQOWpzN0FBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.1.0/ConFlow.app.tar.gz"
     }
   }
 }
