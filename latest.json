@@ -1,0 +1,15 @@
+{
+  "version": "1.0.3",
+  "notes": "Universal-Paket fuer Intel- und Apple-Silicon-Macs.",
+  "pub_date": "2026-07-29T08:12:26Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2J2YkhSUEFubkMzdjhFbWt1SnFxVGppUG9NS0FJTDhnY1kzQ0lhRE5iMXV5YXBBRXBGQ01SYVBwSmU0TC9nZXh3cXl1b2pMVnRPLzhWV2hqcHlTQ1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzEyNjY1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjQ5VlJkd3JvWnAvVVVoNHdnMk91MElGMVhmM2V4ekdDc2tNclFMaVpSYTBvNGNUMGxSM2xWaGUwZStmZk1wRUs4N0hpWWsvUE1ROUNlR2E1OVRvWkRRPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.0.3/ConFlow.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2J2YkhSUEFubkMzdjhFbWt1SnFxVGppUG9NS0FJTDhnY1kzQ0lhRE5iMXV5YXBBRXBGQ01SYVBwSmU0TC9nZXh3cXl1b2pMVnRPLzhWV2hqcHlTQ1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MzEyNjY1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjQ5VlJkd3JvWnAvVVVoNHdnMk91MElGMVhmM2V4ekdDc2tNclFMaVpSYTBvNGNUMGxSM2xWaGUwZStmZk1wRUs4N0hpWWsvUE1ROUNlR2E1OVRvWkRRPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.0.3/ConFlow.app.tar.gz"
+    }
+  }
+}
