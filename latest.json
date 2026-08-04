@@ -1,15 +1,15 @@
 {
-  "version": "1.3.0",
-  "notes": "Follow-ups lassen sich jetzt direkt im Kalender anlegen, aendern und loeschen. Erledigtes zeigt „Erledigt am ...\" und laesst sich wieder oeffnen. Umschalter Liste/Kalender als beschrifteter Knopf. NDA-Dokumentkategorie im Lieferumfang.",
-  "pub_date": "2026-08-03T08:49:04Z",
+  "version": "1.4.1",
+  "notes": "Rechnungen koennen einen kurzen Hinweis an den Zahlungspflichtigen tragen (zwei Zeilen, Vorbelegung in den Einstellungen). Ausserdem gleichmaessige Zeilenhoehen in der Positionstabelle und korrekter Umbruch sehr langer Woerter.",
+  "pub_date": "2026-08-04T14:59:32Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1IzUXlOb0xCZVRUWWJLWm56TFVwZHJMQ2tGcHNmS3RPTnYydjN4bm5zcFZyTnVBUUJFRnVwMms3L3BncWg1SG5HVm5SWVpNa3ZkdDNYbDdycjVTUUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NzQ2NzE1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CmFJM2lVaHgzdkJBcTFHUUJkeUtTZFdFK1NTTzdEbGYrOVJZZUVhVmtFVU1Nc1FHYUtqd01sSWhNdGtrVnV4QWNGd0lxZi9YZ3VYcUNiNTNwTmdGSUJBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.3.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dTUTJtSGxpTmpNMUU2OTZMeWFuakNLZnp5K2pXMDA2K2pDZWZOVyt4UG95YkhzZituNTZJeVZidTFLbnRKTW50dTAwM3JhYjdxV09hL0FJUWo4bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1ODUzOTE5CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Clc0UlZVdWZQT0pkRHpqY2g2RHNNeTE3czRLQjV3dkFmM1JWMWhoNHU0L2M4c2VaL2tiNFJLQ0hjVHorYlhtZXZTb1ZEeXJpM3JtT3lZNW9HVXllZUJ3PT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.4.1P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1IzUXlOb0xCZVRUWWJLWm56TFVwZHJMQ2tGcHNmS3RPTnYydjN4bm5zcFZyTnVBUUJFRnVwMms3L3BncWg1SG5HVm5SWVpNa3ZkdDNYbDdycjVTUUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NzQ2NzE1CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CmFJM2lVaHgzdkJBcTFHUUJkeUtTZFdFK1NTTzdEbGYrOVJZZUVhVmtFVU1Nc1FHYUtqd01sSWhNdGtrVnV4QWNGd0lxZi9YZ3VYcUNiNTNwTmdGSUJBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.3.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dTUTJtSGxpTmpNMUU2OTZMeWFuakNLZnp5K2pXMDA2K2pDZWZOVyt4UG95YkhzZituNTZJeVZidTFLbnRKTW50dTAwM3JhYjdxV09hL0FJUWo4bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1ODUzOTE5CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Clc0UlZVdWZQT0pkRHpqY2g2RHNNeTE3czRLQjV3dkFmM1JWMWhoNHU0L2M4c2VaL2tiNFJLQ0hjVHorYlhtZXZTb1ZEeXJpM3JtT3lZNW9HVXllZUJ3PT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.4.1P/ConFlow.app.tar.gz"
     }
   }
 }
