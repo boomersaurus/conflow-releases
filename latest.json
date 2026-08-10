@@ -1,15 +1,15 @@
 {
-  "version": "1.4.1",
-  "notes": "Rechnungen koennen einen kurzen Hinweis an den Zahlungspflichtigen tragen (zwei Zeilen, Vorbelegung in den Einstellungen). Ausserdem gleichmaessige Zeilenhoehen in der Positionstabelle und korrekter Umbruch sehr langer Woerter.",
-  "pub_date": "2026-08-04T14:59:32Z",
+  "version": "1.5.0",
+  "notes": "Rechnungen koennen zusaetzlich als E-Rechnung nach EN 16931 entstehen (ZUGFeRD): fuer den Empfaenger unveraendert, zusaetzlich mit maschinenlesbarem Datensatz in der PDF-Datei. Ausserdem: Hinweis, wenn ein Lizenzschluessel nicht mehr passt, Rechnung ausstellen ohne Zwischenschritt und durchgaengig deutsche Datumsangaben.",
+  "pub_date": "2026-08-10T11:52:41Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dTUTJtSGxpTmpNMUU2OTZMeWFuakNLZnp5K2pXMDA2K2pDZWZOVyt4UG95YkhzZituNTZJeVZidTFLbnRKTW50dTAwM3JhYjdxV09hL0FJUWo4bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1ODUzOTE5CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Clc0UlZVdWZQT0pkRHpqY2g2RHNNeTE3czRLQjV3dkFmM1JWMWhoNHU0L2M4c2VaL2tiNFJLQ0hjVHorYlhtZXZTb1ZEeXJpM3JtT3lZNW9HVXllZUJ3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.4.1P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1ExVzQ0a0VTNmlVaVlmK2hXTWc4Y2N6dW1JcTVWalNYbXJLb1RPcWR0eFJKa29EQ3d0OHVXTlBMSDZOSGt6VTFZcG9VNkpWTVFhVklJRG9kU0luRndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MzYyNjIwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjEvU2pyRmpuTVRwMGVQRnBTMWxIeE9yYlkxa1JaWDJINXh0dnk2Tkx1WDl1Z2NsYTUvd1NmSHoxZnZJYnhyRysrMWpIbGlta1cxZ2ozRUFweFVlR0NBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.5.0P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1dTUTJtSGxpTmpNMUU2OTZMeWFuakNLZnp5K2pXMDA2K2pDZWZOVyt4UG95YkhzZituNTZJeVZidTFLbnRKTW50dTAwM3JhYjdxV09hL0FJUWo4bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1ODUzOTE5CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Clc0UlZVdWZQT0pkRHpqY2g2RHNNeTE3czRLQjV3dkFmM1JWMWhoNHU0L2M4c2VaL2tiNFJLQ0hjVHorYlhtZXZTb1ZEeXJpM3JtT3lZNW9HVXllZUJ3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.4.1P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1ExVzQ0a0VTNmlVaVlmK2hXTWc4Y2N6dW1JcTVWalNYbXJLb1RPcWR0eFJKa29EQ3d0OHVXTlBMSDZOSGt6VTFZcG9VNkpWTVFhVklJRG9kU0luRndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MzYyNjIwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjEvU2pyRmpuTVRwMGVQRnBTMWxIeE9yYlkxa1JaWDJINXh0dnk2Tkx1WDl1Z2NsYTUvd1NmSHoxZnZJYnhyRysrMWpIbGlta1cxZ2ozRUFweFVlR0NBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.5.0P/ConFlow.app.tar.gz"
     }
   }
 }
