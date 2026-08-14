@@ -1,15 +1,15 @@
 {
-  "version": "1.5.0",
-  "notes": "Rechnungen koennen zusaetzlich als E-Rechnung nach EN 16931 entstehen (ZUGFeRD): fuer den Empfaenger unveraendert, zusaetzlich mit maschinenlesbarem Datensatz in der PDF-Datei. Ausserdem: Hinweis, wenn ein Lizenzschluessel nicht mehr passt, Rechnung ausstellen ohne Zwischenschritt und durchgaengig deutsche Datumsangaben.",
-  "pub_date": "2026-08-10T11:52:41Z",
+  "version": "1.6.2",
+  "notes": "Leistungsnachweis drucken: die erfasste Zeit als Aufstellung fuer den Klienten oder fuer die eigenen Unterlagen, tagesgenauer Zeitraum, wahlweise mit Auslagen und nach Kalenderwochen. Behoben: Rechnungsanlagen verloren ab etwa 30 Sessions still die restlichen Zeilen. Ausserdem: Anschrift und Telefon von Firmenkunden, Visitenkarte im Klientenprofil, durchgehend die Sie-Form und mehrere Verbesserungen an der Bedienung.",
+  "pub_date": "2026-08-14T10:34:23Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1ExVzQ0a0VTNmlVaVlmK2hXTWc4Y2N6dW1JcTVWalNYbXJLb1RPcWR0eFJKa29EQ3d0OHVXTlBMSDZOSGt6VTFZcG9VNkpWTVFhVklJRG9kU0luRndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MzYyNjIwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjEvU2pyRmpuTVRwMGVQRnBTMWxIeE9yYlkxa1JaWDJINXh0dnk2Tkx1WDl1Z2NsYTUvd1NmSHoxZnZJYnhyRysrMWpIbGlta1cxZ2ozRUFweFVlR0NBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.5.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2Nxb3BlTW1GbHNMc0JKY1RlQ3BiVmU3ZzgxWjBPdkZQa2RDdnFTdUFrMndiR3ZYRlUxYTJvSmJTeGFsdVdyYkhBd29CaEE0YzZlajc4RXZIMnpNUEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NzAzNTYyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjdWOElGY3NVb1hKYTl3Q255TDdGQlp2MXZkTHdUMGNocmxVZFk4MTVxaEVpUzdqRXZ4N2gwYXpVNFVEU3dFckZOVWZ4eEpKaXcreXNQOVVUaXpJWUJRPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.6.2P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1ExVzQ0a0VTNmlVaVlmK2hXTWc4Y2N6dW1JcTVWalNYbXJLb1RPcWR0eFJKa29EQ3d0OHVXTlBMSDZOSGt6VTFZcG9VNkpWTVFhVklJRG9kU0luRndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MzYyNjIwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjEvU2pyRmpuTVRwMGVQRnBTMWxIeE9yYlkxa1JaWDJINXh0dnk2Tkx1WDl1Z2NsYTUvd1NmSHoxZnZJYnhyRysrMWpIbGlta1cxZ2ozRUFweFVlR0NBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.5.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2Nxb3BlTW1GbHNMc0JKY1RlQ3BiVmU3ZzgxWjBPdkZQa2RDdnFTdUFrMndiR3ZYRlUxYTJvSmJTeGFsdVdyYkhBd29CaEE0YzZlajc4RXZIMnpNUEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NzAzNTYyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjdWOElGY3NVb1hKYTl3Q255TDdGQlp2MXZkTHdUMGNocmxVZFk4MTVxaEVpUzdqRXZ4N2gwYXpVNFVEU3dFckZOVWZ4eEpKaXcreXNQOVVUaXpJWUJRPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.6.2P/ConFlow.app.tar.gz"
     }
   }
 }
