@@ -363,6 +363,10 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 /* ---------- Preis ---------- */
 
 .preis-paar { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 840px; margin: 32px auto 0; }
+/* Solange es nur die jaehrliche Zahlweise gibt (Beschluss 17.08.2026), steht
+   eine einzelne Karte mittig statt in halber Breite. Die Klasse kommt weg,
+   sobald die monatliche Karte zurueckkehrt. */
+.preis-paar.preis-einzeln { grid-template-columns: 1fr; max-width: 420px; }
 .preis-karte {
   border: 1px solid var(--border);
   border-radius: var(--radius);
