@@ -3,66 +3,311 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ConFlow</title>
+<title>ConFlow — Consulting Workflow. Auf Ihrem Mac.</title>
 <meta name="robots" content="noindex">
-
-<!--
-  ============================================================================
-  Wurzelseite von conflow.app. Wer nur die Domain eintippt, landet hier.
-
-  Sie leitet auf die Kaufseite weiter. Der Verweis ist RELATIV -- damit
-  funktioniert die Seite unter conflow.app genauso wie unter der
-  github.io-Adresse, ohne dass irgendwo ein Rechnername festgeschrieben ist.
-
-  Das Ziel steht an ZWEI Stellen: im <meta>-Element und im sichtbaren
-  Verweis. Beide aendern, sonst leitet die Seite woandershin, als der
-  Verweis verspricht. Pruefung (d) im Bauskript sieht nach.
-
-  Spaeter soll hier die Startseite mit den zwoelf Kacheln stehen. Bis dahin
-  ist eine Weiterleitung besser als die 404-Seite von GitHub.
-  ============================================================================
--->
-
-<meta http-equiv="refresh" content="0; url=kaufen/">
-
-<style>
-  /* Ohne fremde Schriften und ohne eigenes Stylesheet: Diese Seite muss auch
-     dann etwas Lesbares zeigen, wenn sonst nichts geladen wird. */
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background: #ffffff;
-    color: #1d1d1f;
-  }
-  @media (prefers-color-scheme: dark) { body { background: #131314; color: #f5f5f7; } }
-  .marke { font-size: 21px; font-weight: 650; letter-spacing: -0.01em; margin: 0 0 10px; }
-  p { margin: 0 0 22px; color: #6e6e73; }
-  @media (prefers-color-scheme: dark) { p { color: #9a9a9e; } }
-  a {
-    display: inline-block;
-    background: #0071e3;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 12px 26px;
-    border-radius: 980px;
-  }
-</style>
+<meta name="description" content="ConFlow ist eine Mac-Anwendung für freiberufliche Consultants: Klientenverwaltung, Zeiterfassung, CRM, Rechnung und EÜR. Alle Daten bleiben auf Ihrem Rechner. Keine Cloud.">
+<link rel="stylesheet" href="stil.css">
 </head>
 <body>
-  <div>
-    <p class="marke">ConFlow</p>
-    <p>Einen Augenblick, es geht weiter.</p>
-    <!-- Zweite Stelle mit dem Ziel. Der sichtbare Verweis ist die
-         Rueckfallebene, falls die automatische Weiterleitung nicht greift. -->
-    <a href="kaufen/">Weiter zu ConFlow</a>
+
+<header class="kopf">
+  <div class="mitte">
+    <a class="wortmarke" href="#start">ConFlow</a>
+    <nav>
+      <a href="#person">Ablauf</a>
+      <a href="#unterschied" class="nur-breit">Unterschied</a>
+      <a href="#preis">Preis</a>
+      <a href="#laden">Laden</a>
+    </nav>
   </div>
+</header>
+
+<main class="stapel">
+
+  <article class="tafel" id="start">
+    <div class="mitte tafel-inhalt tafel-aufmacher">
+      <div class="tafel-text weit">
+        <h1>Sie beraten.<br>Für den Rest haben Sie ConFlow.</h1>
+        <p class="unterzeile">
+          ConFlow begleitet Sie durch Ihren Workflow: Klienten, Mandate, Zeiten, Rechnungen.
+          Alles lokal auf Ihrem Mac. Ohne Cloud. Volle Kontrolle.
+        </p>
+        <p class="kleingedrucktes">Für macOS 10.15 Catalina oder neuer</p>
+        <p class="hinweis-scrollen">Weiter scrollen<span aria-hidden="true"></span></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="person">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">1</span>
+        <h2>Alles zu Ihren Klienten auf einer Seite</h2>
+        <p>Ausgangslage, Ziele und Beratungsverlauf: Kompakt im Klientenprofil.</p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/02-klient-stammdaten.webp" width="2150" height="1450"
+               alt="Klientenprofil in ConFlow mit Kontaktdaten, Status und Beratungsnotizen.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel" id="mandat">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">2</span>
+        <h2>Verschiedene Abrechnungsmodelle</h2>
+        <p>
+          Stundenhonorar, Sitzungspauschale, Paketpreis und weitere Modelle —
+          je Mandat, nicht je Klient.
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/03-mandate.webp" width="2150" height="1450" loading="lazy"
+               alt="Ein Mandat in ConFlow mit gewähltem Preismodell und Konditionen.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="zeit">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">3</span>
+        <h2>Jedes Mandat. Jede Sitzung. Jede Minute.</h2>
+        <p>
+          Datum, Dauer, Tätigkeit — alles einfach erfasst. Reisezeiten und Auslagen
+          natürlich auch. Mit Dokumentenablage am Mandat.
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/04-zeiterfassung.webp" width="2150" height="1450" loading="lazy"
+               alt="Zeiterfassung in ConFlow: einzelne Sitzungen mit Tätigkeit und laufenden Stundensummen.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel" id="followups">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">4</span>
+        <h2>Nichts bleibt liegen</h2>
+        <p>
+          Telefonate, Termine und Wiedervorlagen an einer Stelle — nach Dringlichkeit
+          sortiert.
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/04b-followups-liste.webp" width="2150" height="1450" loading="lazy"
+               alt="Die Follow-up-Liste in ConFlow, gruppiert nach überfällig, heute, diese Woche und später.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="rechnung">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">5</span>
+        <h2>Aus Zeit wird Geld</h2>
+        <p>
+          Aus den erfassten Sitzungen entsteht per Klick eine fertige Rechnung nach
+          DIN 5008 — mit Stundennachweis und QR-Code zum einfachen Überweisen.
+        </p>
+      </div>
+      <div class="tafel-bild ueberlagert">
+        <div class="fenster">
+          <img src="bilder/05-rechnung.webp" width="2150" height="1450" loading="lazy"
+               alt="Rechnungsentwurf in ConFlow, erzeugt aus den erfassten Sitzungen eines Mandats.">
+        </div>
+        <div class="blatt">
+          <img src="bilder/05b-rechnung-pdf.webp" width="1654" height="2339" loading="lazy"
+               alt="Die fertige Rechnung als PDF im Format DIN 5008, mit QR-Code zum Überweisen.">
+        </div>
+        <div class="blatt blatt-oben">
+          <img src="bilder/05c-stundennachweis.webp" width="1654" height="2339" loading="lazy"
+               alt="Die Anlage zur Rechnung: der Stundennachweis mit jeder einzelnen Sitzung, Datum, Dauer und Tätigkeit.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel" id="erechnung">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text weit">
+        <span class="schritt-nummer">6</span>
+        <h2>E-Rechnung nach EN&nbsp;16931</h2>
+        <p>
+          Spätestens ab 2028 müssen Rechnungen an Geschäftskunden maschinenlesbar sein.
+          ConFlow kann das heute schon (PRO-Funktion).
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="blatt-einzeln">
+          <img src="bilder/06b-erechnung.webp" width="1654" height="2339" loading="lazy"
+               alt="Dieselbe Rechnung in zwei Schichten: oben das gewohnte Blatt, darunter
+                    scheint das eingebettete factur-x.xml mit Rechnungsnummer, Empfänger,
+                    IBAN, Fälligkeit und Betrag durch.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="geld">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">7</span>
+        <h2>Geld da?</h2>
+        <p>
+          Bezahlt, offen, überfällig? Alles auf einen Blick.
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/06-rechnungsuebersicht.webp" width="2154" height="1488" loading="lazy"
+               alt="Rechnungsübersicht in ConFlow mit den Zuständen bezahlt, offen und überfällig.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel" id="steuer">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text">
+        <span class="schritt-nummer">8</span>
+        <h2>Auch ans Finanzamt ist gedacht</h2>
+        <p>
+          Betriebsausgaben laufen mit, Vorsteuer und Teilabzug rechnet ConFlow.
+          Am Jahresende ist die EÜR fix und fertig (PRO-Funktion).
+        </p>
+      </div>
+      <div class="tafel-bild">
+        <div class="fenster">
+          <img src="bilder/07-euer-betriebsausgaben.webp" width="2154" height="1488" loading="lazy"
+               alt="Der Finanzbereich von ConFlow mit Betriebsausgaben, Kategorien und ausgewiesener Vorsteuer.">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="unterschied">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text weit">
+        <span class="schritt-nummer">9</span>
+        <h2>Klientendaten bleiben lokal</h2>
+        <p>
+          In Ihren Notizen stehen höchst sensible persönliche Informationen.
+          Die gehören nicht auf fremde Server.
+        </p>
+      </div>
+      <div class="dreier">
+        <div class="karte">
+          <span class="zeichen" aria-hidden="true">🖥️</span>
+          <h3>Klientendaten bleiben auf Ihrem Mac.</h3>
+          <p>
+            Klienten-Details liegen nur auf Ihrer Festplatte. ConFlow verschickt nichts
+            davon — auch nicht heimlich im Hintergrund.
+          </p>
+        </div>
+        <div class="karte">
+          <span class="zeichen" aria-hidden="true">🔓</span>
+          <h3>BASIC: Dauerhaft kostenlos</h3>
+          <p>
+            Sie können die funktionsreiche BASIC-Version unbegrenzt kostenfrei nutzen.
+            Für PRO bezahlen Sie jährlich.
+          </p>
+        </div>
+        <div class="karte">
+          <span class="zeichen" aria-hidden="true">✈️</span>
+          <h3>Läuft ohne Netz</h3>
+          <p>
+            Im Zug, beim Klienten, im Funkloch: ConFlow funktioniert voll offline.
+            Nur für neue Versionen müssen Sie ins Netz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="tafel" id="preis">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text weit">
+        <p class="augenbraue">Preis</p>
+        <h2>BASIC oder PRO?</h2>
+      </div>
+      <div class="preis-paar">
+        <div class="preis-karte">
+          <h3>BASIC</h3>
+          <p class="betrag">Kostenlos</p>
+          <p class="betrag-zusatz">dauerhaft nutzbar</p>
+          <ul>
+            <li>Klienten und Mandate</li>
+            <li>Zeiterfassung, Reisekosten, Auslagen</li>
+            <li>Rechnungen als PDF nach DIN 5008</li>
+            <li>Zahlungsstatus verfolgen</li>
+            <li>Wiedervorlage &amp; Pipeline</li>
+          </ul>
+          <a class="knopf knopf-leer" href="#laden">Laden</a>
+        </div>
+        <div class="preis-karte hervor">
+          <h3>PRO</h3>
+          <p class="betrag">49,00 €</p>
+          <p class="betrag-zusatz">pro Jahr — oder 5,90 € pro Monat</p>
+          <ul>
+            <li>Alles aus BASIC</li>
+            <li>Einnahmenüberschussrechnung</li>
+            <li>Kleinunternehmer-Grenze im Blick</li>
+            <li>E-Rechnung nach EN 16931</li>
+            <li>Support per E-Mail</li>
+          </ul>
+          <a class="knopf knopf-voll" href="/kaufen/">Kaufen</a>
+        </div>
+      </div>
+      <p class="preis-fussnote">
+        Läuft eine PRO-Lizenz aus, arbeitet ConFlow als BASIC weiter. Ihre Daten bleiben
+        vollständig erhalten. PRO-Funktionen können mit einer neuen Lizenz wieder
+        aktiviert werden.
+      </p>
+    </div>
+  </article>
+
+  <article class="tafel grau" id="laden">
+    <div class="mitte tafel-inhalt">
+      <div class="tafel-text weit">
+        <h2>ConFlow. Consulten statt verwalten.</h2>
+        <p>Und alles bleibt auf Ihrem Mac.</p>
+        <div class="knopfzeile" style="margin-top:28px;">
+          <a class="knopf knopf-voll" href="#">Download</a>
+        </div>
+      </div>
+      <dl class="fakten">
+        <div class="fakt"><dt>Betriebssystem</dt><dd>macOS 10.15 oder neuer</dd></div>
+        <div class="fakt"><dt>Prozessor</dt><dd>Apple Silicon und Intel</dd></div>
+        <div class="fakt"><dt>Größe</dt><dd>rund 21 MB</dd></div>
+        <div class="fakt"><dt>Sprache</dt><dd>Deutsch</dd></div>
+        <div class="fakt"><dt>Aktualisierungen</dt><dd>kostenlos</dd></div>
+        <div class="fakt"><dt>Nutzerkonto nötig</dt><dd>nein</dd></div>
+      </dl>
+    </div>
+  </article>
+
+</main>
+
+<footer class="fuss">
+  <div class="mitte">
+    <div>ConFlow — ein Angebot von PR \ NT © 2026</div>
+    <nav>
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
