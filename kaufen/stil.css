@@ -651,3 +651,7 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
 .schriftstueck ul { padding-left: 22px; margin: 0 0 14px; }
 .schriftstueck li { margin-bottom: 10px; }
 .schriftstueck strong { color: var(--text); font-weight: 600; }
+
+/* Zwischenüberschriften auf den Textseiten -- eingeführt am 18.08.2026 für die
+   beiden Listen auf der Sicherheitsseite ("Das gehört hierher" / "nicht"). */
+.schriftstueck h3 { font-size: 16px; font-weight: 620; margin: 26px 0 8px; color: var(--text); }
