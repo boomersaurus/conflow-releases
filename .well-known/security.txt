@@ -1,0 +1,16 @@
+# ConFlow -- Meldung von Sicherheitsluecken
+#
+# Diese Datei ist die maschinenlesbare Fassung von https://conflow.app/sicherheit/
+# und folgt RFC 9116. Sicherheitsforscher und automatische Werkzeuge suchen sie
+# unter genau dieser Adresse: /.well-known/security.txt
+#
+# ACHTUNG, DAS ABLAUFDATUM IST PFLICHT und darf hoechstens ein Jahr in der
+# Zukunft liegen. Eine abgelaufene Datei gilt als ungueltig -- dann steht das
+# Produkt da wie eines ohne Meldeweg. kaufseite-veroeffentlichen.sh bricht ab,
+# wenn das Datum abgelaufen oder zu weit weg ist.
+
+Contact: mailto:kontakt@conflow.app
+Expires: 2027-08-01T23:59:59.000Z
+Preferred-Languages: de, en
+Canonical: https://conflow.app/.well-known/security.txt
+Policy: https://conflow.app/sicherheit/
