@@ -1,15 +1,15 @@
 {
-  "version": "1.6.2",
-  "notes": "Leistungsnachweis drucken: die erfasste Zeit als Aufstellung fuer den Klienten oder fuer die eigenen Unterlagen, tagesgenauer Zeitraum, wahlweise mit Auslagen und nach Kalenderwochen. Behoben: Rechnungsanlagen verloren ab etwa 30 Sessions still die restlichen Zeilen. Ausserdem: Anschrift und Telefon von Firmenkunden, Visitenkarte im Klientenprofil, durchgehend die Sie-Form und mehrere Verbesserungen an der Bedienung.",
-  "pub_date": "2026-08-14T10:34:23Z",
+  "version": "1.7.8",
+  "notes": "Belege zu Auslagen: Zu jeder Auslage lassen sich Unterlagen hinterlegen -- Quittung, Rechnung, Fahrschein. Der Knopf steht in der Auslagenzeile unter Sessions; die Kategorien sind dieselben wie bei den Mandatsdokumenten. Die Dateien liegen auf Ihrem Rechner und werden mit der Auslage oder dem Mandat geloescht. Behoben: Die Auslagenliste nahm unnoetig viel Platz ein, und einzelne Betraege standen in englischer Schreibweise mit Punkt statt Komma.",
+  "pub_date": "2026-08-20T12:21:00Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2Nxb3BlTW1GbHNMc0JKY1RlQ3BiVmU3ZzgxWjBPdkZQa2RDdnFTdUFrMndiR3ZYRlUxYTJvSmJTeGFsdVdyYkhBd29CaEE0YzZlajc4RXZIMnpNUEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NzAzNTYyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjdWOElGY3NVb1hKYTl3Q255TDdGQlp2MXZkTHdUMGNocmxVZFk4MTVxaEVpUzdqRXZ4N2gwYXpVNFVEU3dFckZOVWZ4eEpKaXcreXNQOVVUaXpJWUJRPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.6.2P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1MrUHFHcWVpeVM0Vk5RcVNnVlNGd1ZYZ3oxcWtTY0htNEFmYkFOcmU2czAvbkw0T3dtZEdrb3JzUTJ1OWo1TUwzc1hGZkM4VEN0Qk9UY2xLZjg1OVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjI4NDMwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Cm9mVit2b3JsM3NHa0h0K2RqWFQyNmowenl0UGo1cmxJNUltalVRUk5zb1cvbzhDTEE0YnRMVXBjaXpWRXJJTFlwM1ZJb2E1UTBhbE1yWWFSL0txbUNBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.7.8P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2Nxb3BlTW1GbHNMc0JKY1RlQ3BiVmU3ZzgxWjBPdkZQa2RDdnFTdUFrMndiR3ZYRlUxYTJvSmJTeGFsdVdyYkhBd29CaEE0YzZlajc4RXZIMnpNUEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NzAzNTYyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CjdWOElGY3NVb1hKYTl3Q255TDdGQlp2MXZkTHdUMGNocmxVZFk4MTVxaEVpUzdqRXZ4N2gwYXpVNFVEU3dFckZOVWZ4eEpKaXcreXNQOVVUaXpJWUJRPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.6.2P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1MrUHFHcWVpeVM0Vk5RcVNnVlNGd1ZYZ3oxcWtTY0htNEFmYkFOcmU2czAvbkw0T3dtZEdrb3JzUTJ1OWo1TUwzc1hGZkM4VEN0Qk9UY2xLZjg1OVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjI4NDMwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6Cm9mVit2b3JsM3NHa0h0K2RqWFQyNmowenl0UGo1cmxJNUltalVRUk5zb1cvbzhDTEE0YnRMVXBjaXpWRXJJTFlwM1ZJb2E1UTBhbE1yWWFSL0txbUNBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.7.8P/ConFlow.app.tar.gz"
     }
   }
 }
