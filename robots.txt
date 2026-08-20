@@ -1,0 +1,16 @@
+# ConFlow -- https://conflow.app
+#
+# Die Seite darf vollstaendig gelesen werden. Ausgenommen ist allein /pro/:
+# eine reine Weiterleitung ins Kaufangebot, im Suchergebnis waere sie nur ein
+# leerer Zwischenschritt.
+#
+# ACHTUNG, falls die Seite je wieder unsichtbar werden soll: NICHT hier sperren.
+# Ein Disallow verbietet das LESEN -- wer nicht lesen darf, sieht auch ein
+# noindex nicht mehr, und die Adresse kann trotzdem in den Ergebnissen stehen.
+# Der richtige Weg ist das Meta-Element noindex auf der Seite selbst.
+
+User-agent: *
+Allow: /
+Disallow: /pro/
+
+Sitemap: https://conflow.app/sitemap.xml
