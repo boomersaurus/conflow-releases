@@ -11,4 +11,5 @@
   <url><loc>https://conflow.app/sicherheit/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://conflow.app/impressum/</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
   <url><loc>https://conflow.app/datenschutz/</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://conflow.app/lizenzbedingungen/</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
 </urlset>
