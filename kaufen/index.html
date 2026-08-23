@@ -59,15 +59,31 @@
             <li>Eine Zahlung im Jahr</li>
             <li>Einzelplatzlizenz, auf Ihren Namen</li>
           </ul>
-          <span class="knopf knopf-voll"><span class="platzhalter">Bezahlweg folgt</span></span>
+          <button type="button" class="knopf knopf-voll" id="kaufen-pro">Kaufen</button>
         </div>
 
       </div>
 
+      <p class="kauf-lieferzeit">
+        Der Schlüssel wird von Hand zugestellt — in der Regel innerhalb weniger Stunden,
+        spätestens am nächsten Werktag.
+      </p>
+
+      <p class="kauf-hinweis" id="kauf-ausfall" hidden>
+        Der Bezahlvorgang lässt sich gerade nicht öffnen. Schreiben Sie an
+        <a href="mailto:kontakt@conflow.app">kontakt@conflow.app</a>, dann melde ich
+        mich mit einem Kaufweg.
+      </p>
+
+      <p class="kauf-hinweis">
+        Alle Beträge einschließlich der gesetzlichen Umsatzsteuer. Verkäufer und
+        Rechnungssteller ist Paddle; die Umsatzsteuer richtet sich nach Ihrem Land und
+        wird auf der Rechnung ausgewiesen.
+      </p>
+
       <p class="kauf-hinweis">
         BASIC bleibt dauerhaft kostenlos — Sie müssen nichts kaufen, um mit ConFlow
         zu arbeiten. <a href="https://github.com/boomersaurus/conflow-releases/releases/download/v1.8.5P/ConFlow-1.8.5P.dmg">ConFlow laden</a>.
-        <span class="platzhalter">Angabe zur Umsatzsteuer folgt</span>
       </p>
     </div>
   </section>
@@ -154,16 +170,20 @@
           <span class="schritt-ziffer">1</span>
           <h3>Bezahlen</h3>
           <p>
-            Sie wählen die Zahlweise und geben Name und E-Mail-Adresse an.
-            <span class="platzhalter">Bezahlweg folgt</span>
+            Der Bezahlvorgang öffnet sich über dieser Seite. Sie geben Name und
+            E-Mail-Adresse an und zahlen per Karte, PayPal oder Apple Pay. Abgewickelt
+            wird der Kauf von Paddle, das auch die Rechnung stellt.
           </p>
         </div>
         <div class="karte">
           <span class="schritt-ziffer">2</span>
           <h3>Schlüssel erhalten</h3>
           <p>
-            Sie bekommen eine Datei namens <code>license.key</code> per E-Mail.
-            <span class="platzhalter">Zustellweg folgt</span>
+            Sie bekommen den Schlüssel per E-Mail an die Adresse, mit der Sie bezahlt
+            haben. <strong>Die Zustellung erfolgt von Hand</strong> — in der Regel
+            innerhalb weniger Stunden, spätestens am nächsten Werktag. Sofort nach dem
+            Kauf schickt Paddle Ihnen die Bestellbestätigung; der Schlüssel kommt in
+            einer zweiten E-Mail von mir.
           </p>
         </div>
         <div class="karte">
@@ -234,10 +254,24 @@
         </div>
 
         <div class="faq-punkt">
+          <h3>Wie schnell bekomme ich den Schlüssel?</h3>
+          <p>
+            In der Regel innerhalb weniger Stunden, spätestens am nächsten Werktag.
+            ConFlow wird von einer Person entwickelt und betreut, und die Schlüssel
+            werden von Hand zugestellt — dafür landet Ihre Lizenz nicht in einem
+            automatischen Vorgang, der niemanden erreicht, wenn etwas schiefgeht.
+            Ist nach einem Werktag nichts angekommen, schreiben Sie an
+            <a href="mailto:kontakt@conflow.app">kontakt@conflow.app</a>.
+          </p>
+        </div>
+
+        <div class="faq-punkt">
           <h3>Ich finde meinen Schlüssel nicht mehr.</h3>
           <p>
-            Sie erhalten den Schlüssel mit der Bestellbestätigung per E-Mail — heben Sie
-            diese auf. Ist sie verloren, schreiben Sie an
+            Sie erhalten den Schlüssel per E-Mail — heben Sie diese auf. Beachten Sie:
+            Der Schlüssel steht <em>nicht</em> in der Bestellbestätigung von Paddle,
+            sondern kommt in einer zweiten Nachricht von mir. Ist sie verloren,
+            schreiben Sie an
             <a href="mailto:kontakt@conflow.app">kontakt@conflow.app</a>; nach Abgleich mit
             Ihrem Kauf stelle ich Ihnen denselben Schlüssel erneut zu. Zugestellt wird
             ausschließlich an die Adresse, mit der bezahlt wurde.
@@ -271,6 +305,71 @@
     </nav>
   </div>
 </footer>
+
+<script>
+(function () {
+  var knopf = document.getElementById('kaufen-pro');
+  if (!knopf) return;
+
+  var QUELLE = 'https://cdn.paddle.com/paddle/v2/paddle.js';
+  var TOKEN  = 'live_8b4b32f29ca580ac9dc9b944ba2';
+  var PREIS  = 'pri_01m0jkzwtda4ktycj08812j5pk';
+
+  var laeuft = false;   // gegen Doppelklicks waehrend des Nachladens
+  var bereit = false;   // Paddle.Initialize nur einmal
+
+  // Ein Knopf, der nichts tut, ist schlimmer als ein abgeschalteter Knopf.
+  function ausfall() {
+    knopf.disabled = true;
+    knopf.textContent = 'Kauf gerade nicht möglich';
+    var hinweis = document.getElementById('kauf-ausfall');
+    if (hinweis) hinweis.hidden = false;
+  }
+
+  function oeffnen() {
+    try {
+      Paddle.Checkout.open({
+        items: [{ priceId: PREIS, quantity: 1 }],
+        settings: { locale: 'de', displayMode: 'overlay' }
+      });
+    } catch (e) {
+      ausfall();
+    }
+  }
+
+  function nachladen(fertig) {
+    var skript = document.createElement('script');
+    skript.src = QUELLE;
+    skript.onload = fertig;
+    skript.onerror = function () { laeuft = false; ausfall(); };
+    document.head.appendChild(skript);
+  }
+
+  knopf.addEventListener('click', function () {
+    if (laeuft) return;
+
+    if (bereit) { oeffnen(); return; }
+
+    laeuft = true;
+    knopf.textContent = 'Einen Moment …';
+
+    nachladen(function () {
+      if (typeof Paddle === 'undefined') { laeuft = false; ausfall(); return; }
+      try {
+        Paddle.Initialize({ token: TOKEN });
+      } catch (e) {
+        laeuft = false;
+        ausfall();
+        return;
+      }
+      bereit = true;
+      laeuft = false;
+      knopf.textContent = 'Kaufen';
+      oeffnen();
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

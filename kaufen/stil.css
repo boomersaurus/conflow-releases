@@ -146,6 +146,12 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   white-space: nowrap;
 }
 .knopf:hover { text-decoration: none; }
+/* Der Kaufknopf ist ein <button> und kein <a>, weil Paddle Billing keine
+   Bezahladresse kennt und der Checkout per Skript geoeffnet wird. Browser geben
+   <button> eine eigene Zeilenhoehe und Textausrichtung mit -- ohne diese zwei
+   Zeilen sitzt er einen Hauch anders als die Verweis-Knoepfe daneben. */
+button.knopf { line-height: inherit; text-align: center; }
+button.knopf:disabled { opacity: 0.55; cursor: default; }
 .knopf-voll { background: var(--accent); color: #fff; }
 .knopf-voll:hover { background: var(--accent-hover); color: #fff; }
 .knopf-leer { border-color: var(--border); color: var(--text); }
@@ -442,6 +448,19 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
    einen unsichtbaren Knopf. Aufgefallen am 16.08.2026 auf der Kaufseite, dem
    ersten hellen Knopf mit Platzhalter ueberhaupt. */
 .knopf .platzhalter { border: 0; background: none; color: inherit; padding: 0; }
+
+/* ---------- Lieferzeit unter dem Kaufknopf ---------- */
+
+/* Steht bewusst direkt unter dem Preis und nicht erst im Fragenteil: Der
+   Schluessel wird von Hand zugestellt, und wer das erst NACH dem Bezahlen
+   erfaehrt, haelt den Kauf fuer gescheitert. */
+.kauf-lieferzeit {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 18px auto 0;
+  max-width: 46ch;
+}
 
 /* ---------- Voraussetzungen ---------- */
 
