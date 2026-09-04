@@ -422,6 +422,38 @@ button.knopf:disabled { opacity: 0.55; cursor: default; }
   flex: 0 0 auto;
 }
 
+/* Ausnahme fuer die Preistafel im Tafelstapel.
+   Sie traegt zwei lange Merkmallisten und darunter die Fussnote, die
+   vollstaendig lesbar bleiben MUSS -- sie beantwortet, was beim Auslaufen
+   der Lizenz mit den Daten geschieht. In fester Bildhoehe mit overflow:
+   hidden wird genau dieser Satz abgeschnitten, und die Folgetafel #laden
+   schob sich ueber die Ueberlappung 5vh weit ins Bild.
+   Darum bekommt allein diese Tafel ihre natuerliche Hoehe zurueck, klemmt
+   nichts ab und ueberlappt die naechste Tafel nicht: Wer bei #preis landet,
+   sieht #laden gar nicht, bis er weiterscrollt. Der Stapel-Effekt entfaellt
+   hier bewusst -- der Inhalt hat Vorrang. */
+#preis {
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: visible;
+  margin-bottom: 0;
+  padding-bottom: 56px;
+}
+/* Der Inhalt bekommt seine natuerliche Hoehe (statt 100 %), damit
+   align-items: center der Tafel ihn mittig setzt, solange er in eine
+   Bildhoehe passt -- und ihn andernfalls einfach ueberlaufen laesst,
+   ohne etwas abzuschneiden. */
+#preis .tafel-inhalt { height: auto; }
+/* Etwas engere Senkrechte in der Preistafel: Die BASIC-Liste ist lang,
+   und je knapper sie sitzt, desto eher passt die ganze Tafel samt
+   Fussnote auf niedrige Notebook-Fenster. */
+#preis .preis-paar { margin-top: 22px; }
+#preis .preis-karte ul { margin-bottom: 16px; }
+#preis .preis-karte li { padding-top: 6px; padding-bottom: 6px; }
+#preis .preis-fussnote { margin-top: 16px; }
+
 /* ---------- Platzhalter ---------- */
 
 .platzhalter {
