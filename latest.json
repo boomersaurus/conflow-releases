@@ -1,15 +1,15 @@
 {
-  "version": "1.8.5",
-  "notes": "Behebt zwei Fehler im Ausdruck der Datenauskunft: Lange Beschriftungen wie \"Anschrift des Rechnungsempfaengers\" ueberdruckten den Wert daneben, und eine Anschrift, von der nur das Land bekannt war, erschien als \"Deutschland\" allein.\n\nDie neuen Funktionen aus 1.8.4 finden Sie unveraendert: Gespraechsnotizen zu jedem Termin, Beratungsverlauf zum Aushaendigen und die Datenauskunft im Klientenprofil.",
-  "pub_date": "2026-08-21T13:09:14Z",
+  "version": "2.0.0",
+  "notes": "Neue Funktionen: eigene Projekte neben Ihren Klienten-Mandaten (Zeit- und Ausgabenerfassung, wahlweise abrechenbar oder privat), Honorar-Bausteine am Angebot (Preismodell, Erfolgshonorar, Mindestabnahme -- wandert bei Annahme ins Mandat), Fakturierungsrhythmus am Angebot mit Erinnerung in der Rechnungsuebersicht, Sicherung & Umzug fuer den Wechsel auf einen neuen Mac, und die Zeitmessung kennt jetzt Pause und Fortsetzen.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild. Beim ersten Start erscheint keine Warnung.",
+  "pub_date": "2026-09-22T16:56:01Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1l5ZVl4T2pyZ0gxUHBONWZnUmhWZDBDM1huTWNlWHk3N3M2SGdTVXQvbm85N0RvMVpkY2dmWGVVOTY0U0tWUTBQY0NCOFBJMGxVNzdPSnBXMlZOL1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE3NDgwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CkVNQnZ5b1R4QWhGWWQ0aG9VYzY1Yit2K281dmJQR0lDeDYvNGQ5ZGF1SDVsWUFUY1Z1cTNHMnVETDduaFl6UkpSMXRiRVFjVS9BSTZMVUZjSTlzZ0F3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.8.5P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1NpOVhLcW5kWFhGbFVmdm1NZlc5WjhnWjhWQlp2OEZxT1lJQSt3eHFmbzI4TDlwV3hPMmxRR1I3ckNKaVA2VG9iK2R6d0t5b2xpeDM2V2IvOUZTVlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDk1OTc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnJoMEN4NHZtRnJnSklkbzB5Z2tLMUx1aHkxNkYrYzhvYzduTGkrOGlvcVZZb0JBM3lkckpOYWxtNlJmK1lCQmdabXU0NW5GTU9WWitRdko5QituTUFBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.0.0P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1l5ZVl4T2pyZ0gxUHBONWZnUmhWZDBDM1huTWNlWHk3N3M2SGdTVXQvbm85N0RvMVpkY2dmWGVVOTY0U0tWUTBQY0NCOFBJMGxVNzdPSnBXMlZOL1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE3NDgwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CkVNQnZ5b1R4QWhGWWQ0aG9VYzY1Yit2K281dmJQR0lDeDYvNGQ5ZGF1SDVsWUFUY1Z1cTNHMnVETDduaFl6UkpSMXRiRVFjVS9BSTZMVUZjSTlzZ0F3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v1.8.5P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1NpOVhLcW5kWFhGbFVmdm1NZlc5WjhnWjhWQlp2OEZxT1lJQSt3eHFmbzI4TDlwV3hPMmxRR1I3ckNKaVA2VG9iK2R6d0t5b2xpeDM2V2IvOUZTVlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDk1OTc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnJoMEN4NHZtRnJnSklkbzB5Z2tLMUx1aHkxNkYrYzhvYzduTGkrOGlvcVZZb0JBM3lkckpOYWxtNlJmK1lCQmdabXU0NW5GTU9WWitRdko5QituTUFBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.0.0P/ConFlow.app.tar.gz"
     }
   }
 }
