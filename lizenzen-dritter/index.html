@@ -7,7 +7,7 @@
 <meta name="description" content="Die quelloffenen Bausteine, aus denen ConFlow gebaut ist, mit Lizenzen und Urheberrechtsvermerken.">
 <link rel="canonical" href="https://conflow.app/lizenzen-dritter/">
 <meta name="robots" content="noindex">
-<meta name="conflow-abhaengigkeiten" content="eb38c8d8879058da">
+<meta name="conflow-abhaengigkeiten" content="90707b0ffb7ab809">
 <link rel="stylesheet" href="../stil.css">
 <style>
   .tabellenrahmen { overflow-x: auto; }
@@ -40,13 +40,13 @@
 
   <p>
     ConFlow ist zu einem guten Teil aus quelloffener Software anderer Menschen
-    gebaut — 395 Bausteine sind es derzeit. Deren Lizenzen verlangen, dass
+    gebaut — 405 Bausteine sind es derzeit. Deren Lizenzen verlangen, dass
     ihre Urheberrechtsvermerke mit dem Programm weitergegeben werden. Genau dazu
     dient diese Seite.
   </p>
   <p>
     Aufgeführt ist, was tatsächlich im ausgelieferten Programm steckt:
-    384 Bausteine im Programmkern und 11 in der Oberfläche.
+    394 Bausteine im Programmkern und 11 in der Oberfläche.
     Werkzeuge, die beim Bauen helfen, aber nicht mitgeliefert werden, stehen
     bewusst nicht hier.
   </p>
@@ -57,12 +57,13 @@
     maschinell aus den Abhängigkeiten erzeugt, nicht von Hand gepflegt.
   </p>
 
-  <h2 id="rust">Bausteine in Rust <span class="kleingedrucktes">(384)</span></h2>
+  <h2 id="rust">Bausteine in Rust <span class="kleingedrucktes">(394)</span></h2>
   <div class="tabellenrahmen">
   <table class="lizenztabelle">
     <thead><tr><th>Baustein</th><th>Fassung</th><th>Lizenz</th></tr></thead>
     <tbody>
       <tr><td>adler2</td><td>2.0.1</td><td>0BSD OR MIT OR Apache-2.0</td></tr>
+      <tr><td>aead</td><td>0.5.2</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>ahash</td><td>0.7.8</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>aho-corasick</td><td>1.1.4</td><td>Unlicense OR MIT</td></tr>
       <tr><td>alloc-no-stdlib</td><td>2.0.4</td><td>BSD-3-Clause</td></tr>
@@ -72,8 +73,8 @@
       <tr><td>arrayvec</td><td>0.7.8</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>atoi</td><td>2.0.0</td><td>MIT</td></tr>
       <tr><td>atomic-waker</td><td>1.1.2</td><td>Apache-2.0 OR MIT</td></tr>
-      <tr><td>base64</td><td>0.22.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>base64</td><td>0.21.7</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>base64</td><td>0.22.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>base64ct</td><td>1.8.3</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>bit-set</td><td>0.8.0</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>bit-vec</td><td>0.8.0</td><td>Apache-2.0 OR MIT</td></tr>
@@ -99,7 +100,10 @@
       <tr><td>cargo_metadata</td><td>0.19.2</td><td>MIT</td></tr>
       <tr><td>cfb</td><td>0.7.3</td><td>MIT</td></tr>
       <tr><td>cfg-if</td><td>1.0.4</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>chacha20</td><td>0.9.1</td><td>Apache-2.0 OR MIT</td></tr>
+      <tr><td>chacha20poly1305</td><td>0.10.1</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>chrono</td><td>0.4.45</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>cipher</td><td>0.4.4</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>concurrent-queue</td><td>2.5.0</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>const-oid</td><td>0.9.6</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>cookie</td><td>0.18.1</td><td>MIT OR Apache-2.0</td></tr>
@@ -174,8 +178,8 @@
       <tr><td>futures-util</td><td>0.3.32</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>generic-array</td><td>0.14.7</td><td>MIT</td></tr>
       <tr><td>getrandom</td><td>0.4.3</td><td>MIT OR Apache-2.0</td></tr>
-      <tr><td>getrandom</td><td>0.2.17</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>getrandom</td><td>0.3.4</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>getrandom</td><td>0.2.17</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>glob</td><td>0.3.3</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>hashbrown</td><td>0.12.3</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>hashbrown</td><td>0.15.5</td><td>MIT OR Apache-2.0</td></tr>
@@ -207,9 +211,10 @@
       <tr><td>idna</td><td>1.1.0</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>idna_adapter</td><td>1.2.2</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>image</td><td>0.25.10</td><td>MIT OR Apache-2.0</td></tr>
-      <tr><td>indexmap</td><td>1.9.3</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>indexmap</td><td>2.14.0</td><td>Apache-2.0 OR MIT</td></tr>
+      <tr><td>indexmap</td><td>1.9.3</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>infer</td><td>0.19.0</td><td>MIT</td></tr>
+      <tr><td>inout</td><td>0.1.4</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>ipnet</td><td>2.12.0</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>itoa</td><td>1.0.18</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>json-patch</td><td>3.0.1</td><td>MIT/Apache-2.0</td></tr>
@@ -251,6 +256,7 @@
       <tr><td>objc2-osa-kit</td><td>0.3.2</td><td>Zlib OR Apache-2.0 OR MIT</td></tr>
       <tr><td>objc2-web-kit</td><td>0.3.2</td><td>Zlib OR Apache-2.0 OR MIT</td></tr>
       <tr><td>once_cell</td><td>1.21.4</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>opaque-debug</td><td>0.3.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>open</td><td>5.3.6</td><td>MIT</td></tr>
       <tr><td>option-ext</td><td>0.2.0</td><td>MPL-2.0</td></tr>
       <tr><td>osakit</td><td>0.3.1</td><td>MIT OR Apache-2.0</td></tr>
@@ -270,6 +276,7 @@
       <tr><td>plist</td><td>1.10.0</td><td>MIT</td></tr>
       <tr><td>png</td><td>0.17.16</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>png</td><td>0.18.1</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>poly1305</td><td>0.8.0</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>pom</td><td>3.4.0</td><td>MIT</td></tr>
       <tr><td>potential_utf</td><td>0.1.5</td><td>Unicode-3.0</td></tr>
       <tr><td>powerfmt</td><td>0.2.0</td><td>MIT OR Apache-2.0</td></tr>
@@ -357,8 +364,8 @@
       <tr><td>strsim</td><td>0.11.1</td><td>MIT</td></tr>
       <tr><td>subtle</td><td>2.6.1</td><td>BSD-3-Clause</td></tr>
       <tr><td>swift-rs</td><td>1.0.7</td><td>MIT OR Apache-2.0</td></tr>
-      <tr><td>syn</td><td>2.0.118</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>syn</td><td>1.0.109</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>syn</td><td>2.0.118</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>sync_wrapper</td><td>1.0.2</td><td>Apache-2.0</td></tr>
       <tr><td>synstructure</td><td>0.13.2</td><td>MIT</td></tr>
       <tr><td>tao</td><td>0.35.3</td><td>Apache-2.0</td></tr>
@@ -378,10 +385,10 @@
       <tr><td>tauri-utils</td><td>2.9.3</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>tempfile</td><td>3.27.0</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>tendril</td><td>0.5.1</td><td>MIT OR Apache-2.0</td></tr>
-      <tr><td>thiserror</td><td>2.0.18</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>thiserror</td><td>1.0.69</td><td>MIT OR Apache-2.0</td></tr>
-      <tr><td>thiserror-impl</td><td>2.0.18</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>thiserror</td><td>2.0.18</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>thiserror-impl</td><td>1.0.69</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>thiserror-impl</td><td>2.0.18</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>time</td><td>0.3.53</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>time-core</td><td>0.1.9</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>time-macros</td><td>0.2.31</td><td>MIT OR Apache-2.0</td></tr>
@@ -406,8 +413,8 @@
       <tr><td>tracing-core</td><td>0.1.36</td><td>MIT</td></tr>
       <tr><td>tray-icon</td><td>0.24.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>try-lock</td><td>0.2.5</td><td>MIT</td></tr>
-      <tr><td>ttf-parser</td><td>0.19.2</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>ttf-parser</td><td>0.25.1</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>ttf-parser</td><td>0.19.2</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>typeid</td><td>1.0.3</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>typenum</td><td>1.20.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>unic-char-property</td><td>0.9.0</td><td>MIT/Apache-2.0</td></tr>
@@ -420,6 +427,7 @@
       <tr><td>unicode-normalization</td><td>0.1.25</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>unicode-properties</td><td>0.1.4</td><td>MIT/Apache-2.0</td></tr>
       <tr><td>unicode-segmentation</td><td>1.13.3</td><td>MIT OR Apache-2.0</td></tr>
+      <tr><td>universal-hash</td><td>0.5.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>untrusted</td><td>0.9.0</td><td>ISC</td></tr>
       <tr><td>url</td><td>2.5.8</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>urlpattern</td><td>0.3.0</td><td>MIT</td></tr>
@@ -435,6 +443,7 @@
       <tr><td>writeable</td><td>0.6.3</td><td>Unicode-3.0</td></tr>
       <tr><td>wry</td><td>0.55.1</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>wyz</td><td>0.5.1</td><td>MIT</td></tr>
+      <tr><td>x25519-dalek</td><td>2.0.1</td><td>BSD-3-Clause</td></tr>
       <tr><td>xattr</td><td>1.6.1</td><td>MIT OR Apache-2.0</td></tr>
       <tr><td>yoke</td><td>0.8.3</td><td>Unicode-3.0</td></tr>
       <tr><td>yoke-derive</td><td>0.8.2</td><td>Unicode-3.0</td></tr>
@@ -442,6 +451,7 @@
       <tr><td>zerofrom</td><td>0.1.8</td><td>Unicode-3.0</td></tr>
       <tr><td>zerofrom-derive</td><td>0.1.7</td><td>Unicode-3.0</td></tr>
       <tr><td>zeroize</td><td>1.9.0</td><td>Apache-2.0 OR MIT</td></tr>
+      <tr><td>zeroize_derive</td><td>1.5.0</td><td>Apache-2.0 OR MIT</td></tr>
       <tr><td>zerotrie</td><td>0.2.4</td><td>Unicode-3.0</td></tr>
       <tr><td>zerovec</td><td>0.11.6</td><td>Unicode-3.0</td></tr>
       <tr><td>zerovec-derive</td><td>0.11.3</td><td>Unicode-3.0</td></tr>
@@ -687,7 +697,7 @@ Copyright © 2017-2018 Arm Limited</pre>
    limitations under the License.</pre>
 
   <h3>BSD-3-Clause</h3>
-  <p class="kleingedrucktes">Urheberrechtsvermerke der Bausteine, die unter dieser Lizenz stehen (9):</p>
+  <p class="kleingedrucktes">Urheberrechtsvermerke der Bausteine, die unter dieser Lizenz stehen (11):</p>
   <pre class="lizenztext vermerke">Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
 Copyright (c) 2012 The Go Authors. All rights reserved.
 Copyright (c) 2016 Dropbox, Inc.
@@ -696,6 +706,8 @@ Copyright (c) 2016-2021 Henry de Valence. All rights reserved.
 Copyright (c) 2016-2021 isis agora lovecruft. All rights reserved.
 Copyright (c) 2016-2024 Isis Agora Lovecruft. All rights reserved.
 Copyright (c) 2017-2019 isis agora lovecruft. All rights reserved.
+Copyright (c) 2017-2021 isis agora lovecruft. All rights reserved.
+Copyright (c) 2019-2021 DebugSteven. All rights reserved.
 Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).</pre>
   <pre class="lizenztext">Copyright (c) 2016 Dropbox, Inc.
 All rights reserved.
@@ -725,7 +737,7 @@ See src/polyfill/once_cell/LICENSE-APACHE and src/polyfill/once_cell/LICENSE-MIT
 for the license to code that was sourced from the once_cell project.</pre>
 
   <h3>MIT</h3>
-  <p class="kleingedrucktes">Urheberrechtsvermerke der Bausteine, die unter dieser Lizenz stehen (178):</p>
+  <p class="kleingedrucktes">Urheberrechtsvermerke der Bausteine, die unter dieser Lizenz stehen (188):</p>
   <pre class="lizenztext vermerke">Copyright (c) 2006-2009 Graydon Hoare
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
 Copyright (c) 2009-2013 Mozilla Foundation
@@ -762,6 +774,7 @@ Copyright (c) 2015 Steven Allen
 Copyright (c) 2015 Steven Fackler
 Copyright (c) 2015 The Rust Project Developers
 Copyright (c) 2015-2018 Vlad Filippov
+Copyright (c) 2015-2019 RustCrypto Developers
 Copyright (c) 2015-2020 The rust-hex Developers
 Copyright (c) 2015-2025 Sean McArthur
 Copyright (c) 2016 Alex Crichton
@@ -781,6 +794,7 @@ Copyright (c) 2016, Joseph Birr-Pixton &lt;jpixton@gmail.com&gt;
 Copyright (c) 2016--2017
 Copyright (c) 2016--2023
 Copyright (c) 2016-2019 Ulrik Sverdrup &quot;bluss&quot; and scopeguard developers
+Copyright (c) 2016-2020 RustCrypto Developers
 Copyright (c) 2016-2026 Sean McArthur
 Copyright (c) 2017
 Copyright (c) 2017 - Present Tauri Apps Contributors
@@ -821,6 +835,7 @@ Copyright (c) 2018-2021 RustCrypto Developers
 Copyright (c) 2018-2023 RustCrypto Developers
 Copyright (c) 2018-2023 Sean McArthur
 Copyright (c) 2018-2024 The rust-random Project Developers
+Copyright (c) 2018-2024 The RustCrypto Project Developers
 Copyright (c) 2018-2025 The rust-random Project Developers
 Copyright (c) 2018-2026 The rust-random Project Developers
 Copyright (c) 2018-2026 The RustCrypto Project Developers
@@ -830,15 +845,20 @@ Copyright (c) 2019 Daniel &quot;Lokathor&quot; Gee.
 Copyright (c) 2019 Graham Esau
 Copyright (c) 2019 kneecaw (Nika Layzell)
 Copyright (c) 2019 Matthias Einwag
+Copyright (c) 2019 MobileCoin, LLC
 Copyright (c) 2019 Osspial
 Copyright (c) 2019 The Crossbeam Project Developers
 Copyright (c) 2019 The CryptoCorrosion Contributors
+Copyright (c) 2019 The RustCrypto Project Developers
 Copyright (c) 2019 Tokio Contributors
 Copyright (c) 2019 Tower Contributors
+Copyright (c) 2019-2020 RustCrypto Developers
 Copyright (c) 2019-2021 Tower Contributors
+Copyright (c) 2019-2023 The RustCrypto Project Developers
 Copyright (c) 2019-2024 Sean McArthur &amp; Hyper Contributors
 Copyright (c) 2019-2025 Frank Denis
 Copyright (c) 2019-2025 Sean McArthur &amp; Hyper Contributors
+Copyright (c) 2019-2026 The RustCrypto Project Developers
 Copyright (c) 2020 Andrew D. Straw
 Copyright (c) 2020 Frommi
 Copyright (c) 2020 LaunchBadge, LLC
@@ -858,8 +878,10 @@ Copyright (c) 2021 The RustCrypto Project Developers
 Copyright (c) 2021-2023 The RustCrypto Project Developers
 Copyright (c) 2021-2025 The RustCrypto Project Developers
 Copyright (c) 2022 1Password
+Copyright (c) 2022 Artyom Pavlov
 Copyright (c) 2022 Bartłomiej Maryńczak
 Copyright (c) 2022 Chance Dinkins
+Copyright (c) 2022 The RustCrypto Project Developers
 Copyright (c) 2022-2022 Tauri Programme within The Commons Conservancy
 Copyright (c) 2023 Dirkjan Ochtman &lt;dirkjan@ochtman.nl&gt;
 Copyright (c) 2023 Jacob Pratt et al.
