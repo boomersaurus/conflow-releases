@@ -1,15 +1,15 @@
 {
-  "version": "2.0.0",
-  "notes": "Neue Funktionen: eigene Projekte neben Ihren Klienten-Mandaten (Zeit- und Ausgabenerfassung, wahlweise abrechenbar oder privat), Honorar-Bausteine am Angebot (Preismodell, Erfolgshonorar, Mindestabnahme -- wandert bei Annahme ins Mandat), Fakturierungsrhythmus am Angebot mit Erinnerung in der Rechnungsuebersicht, Sicherung & Umzug fuer den Wechsel auf einen neuen Mac, und die Zeitmessung kennt jetzt Pause und Fortsetzen.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild. Beim ersten Start erscheint keine Warnung.",
-  "pub_date": "2026-09-22T16:56:01Z",
+  "version": "2.1.16",
+  "notes": "Neu in 2.1: Rollen mit eigenem Satz in Mandat und Angebot, eine Austauschdatei für Zeiten und Auslagen, automatische Erinnerungen ans Rechnungstellen und an offene Zahlungen (ohne dass eine Rechnung von selbst entsteht), ein Vorführmodus für Präsentationen und die automatische Aktualisierung.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
+  "pub_date": "2026-10-13T09:28:35Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1NpOVhLcW5kWFhGbFVmdm1NZlc5WjhnWjhWQlp2OEZxT1lJQSt3eHFmbzI4TDlwV3hPMmxRR1I3ckNKaVA2VG9iK2R6d0t5b2xpeDM2V2IvOUZTVlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDk1OTc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnJoMEN4NHZtRnJnSklkbzB5Z2tLMUx1aHkxNkYrYzhvYzduTGkrOGlvcVZZb0JBM3lkckpOYWxtNlJmK1lCQmdabXU0NW5GTU9WWitRdko5QituTUFBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.0.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1c5Snc5bmFGcVoxbkJQVHhmRnZzdCtEaU5LNi8xeUNGd01BY3owQ1g3OVBFSi9xU2E2T2p0eWJrVUM0aDYwVWJ0Snd4bU5RNWpXOXljRTlPNXJaVWdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODgzNTMwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnllejF1Nk1IeWY1cGw2bUo1UEd4eUd5QmtVOFMxeDdFVjRVeUxUeFQ2Zkk4U3dSeUNHUCtQYkxYUnhnbWRzTERZdHp2bEdYRWduZ0UwR2h4ZUtpUUJBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.1.16P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1NpOVhLcW5kWFhGbFVmdm1NZlc5WjhnWjhWQlp2OEZxT1lJQSt3eHFmbzI4TDlwV3hPMmxRR1I3ckNKaVA2VG9iK2R6d0t5b2xpeDM2V2IvOUZTVlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDk1OTc4CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnJoMEN4NHZtRnJnSklkbzB5Z2tLMUx1aHkxNkYrYzhvYzduTGkrOGlvcVZZb0JBM3lkckpOYWxtNlJmK1lCQmdabXU0NW5GTU9WWitRdko5QituTUFBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.0.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1c5Snc5bmFGcVoxbkJQVHhmRnZzdCtEaU5LNi8xeUNGd01BY3owQ1g3OVBFSi9xU2E2T2p0eWJrVUM0aDYwVWJ0Snd4bU5RNWpXOXljRTlPNXJaVWdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODgzNTMwCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CnllejF1Nk1IeWY1cGw2bUo1UEd4eUd5QmtVOFMxeDdFVjRVeUxUeFQ2Zkk4U3dSeUNHUCtQYkxYUnhnbWRzTERZdHp2bEdYRWduZ0UwR2h4ZUtpUUJBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.1.16P/ConFlow.app.tar.gz"
     }
   }
 }
