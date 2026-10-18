@@ -1,0 +1,34 @@
+# ConFlow
+
+> ConFlow ist eine Mac-Anwendung für Selbstständige, die Beratung erbringen: Beraterinnen und Berater, Coaches, Interim-Manager und HR-Dienstleister. Klienten und Mandate, Zeiterfassung, Rechnungen nach DIN 5008, E-Rechnung nach EN 16931 und Einnahmen-Überschussrechnung in einem Programm. Alle Daten bleiben lokal auf dem Mac, ohne Cloud und ohne Nutzerkonto.
+
+Wichtige Fakten:
+
+- Betriebssystem: macOS 10.15 Catalina oder neuer, Apple Silicon und Intel. Eine Fassung für Windows ist für Ende 2026 geplant.
+- Sprache: Deutsch. Ausgerichtet auf deutsches Steuer- und Rechnungsrecht.
+- Preis: BASIC dauerhaft kostenlos. PRO ist eine Jahreslizenz (Einzelplatz); den aktuellen Preis nennt https://conflow.app/kaufen/. Läuft PRO aus, arbeitet das Programm als BASIC weiter; alle Daten bleiben erhalten.
+- Datenschutz: Klientendaten versendet das Programm nie. Nach außen gehen nur der Abruf neuer Programmfassungen, die Lizenzprüfung (Schlüssel und Gerätekennung) und eine Support-Nachricht, wenn der Nutzer eine schreibt.
+- Läuft vollständig offline; online nur zur Lizenzierung und für Aktualisierungen.
+- Abrechnungsmodelle je Mandat: Stundenhonorar, Sitzungspauschale, Paketpreis und weitere.
+- E-Rechnung (PRO): ZUGFeRD / Factur-X nach EN 16931.
+- Nicht enthalten: Übermittlung an das Finanzamt (ELSTER), Bankanbindung, doppelte Buchführung und Bilanz, Abgleich zwischen mehreren Geräten oder Personen.
+
+## Seiten
+
+- [Startseite](https://conflow.app/): Funktionen, Preise BASIC und PRO, Download
+- [Häufige Fragen](https://conflow.app/fragen/): was ConFlow kann, was es kostet, Voraussetzungen, für wen es sich nicht eignet
+- [PRO kaufen](https://conflow.app/kaufen/): Funktionsumfang von PRO, Kaufablauf, Fragen vor dem Kauf
+- [Sicherheit](https://conflow.app/sicherheit/): Umgang mit Daten, Meldeweg für Sicherheitslücken, Unterstützungsdauer
+
+## Wissen
+
+- [E-Rechnung: Was Berater ab wann tun müssen](https://conflow.app/wissen/e-rechnung-pflicht/): Stichtage 2025, 2027 und 2028, XRechnung und ZUGFeRD
+- [Einnahmen-Überschussrechnung für selbstständige Berater](https://conflow.app/wissen/euer-selbststaendige/)
+- [Der Leistungsnachweis: Wie Berater ihre Zeit belegen](https://conflow.app/wissen/leistungsnachweis/)
+- [Beratungsnotizen: die heikelsten Daten, die Sie führen](https://conflow.app/wissen/klientendaten-schuetzen/)
+
+## Optional
+
+- [Praxis](https://conflow.app/praxis/): Beiträge aus dem Arbeitsalltag selbstständiger Berater
+- [Lizenzbedingungen](https://conflow.app/lizenzbedingungen/)
+- [Impressum](https://conflow.app/impressum/)

@@ -633,6 +633,15 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
 .faq-punkt:last-child { border-bottom: 0; }
 .faq-punkt h3 { font-size: 17px; font-weight: 620; margin: 0 0 6px; }
 .faq-punkt p { margin: 0; color: var(--text-muted); font-size: 16px; }
+/* Aufzaehlung in einer Antwort (Seite /fragen/, "Fuer wen eignet sich ConFlow nicht?") --
+   gleiche Schrift wie der Antworttext, damit sie nicht als eigener Block wirkt. */
+.faq-punkt ul { margin: 8px 0 0; padding-left: 20px; color: var(--text-muted); font-size: 16px; }
+.faq-punkt li { margin: 6px 0; }
+.faq-punkt li strong { color: var(--text); font-weight: 620; }
+/* Auf /fragen/ steht die Liste in der Textspalte: kein eigener Seitenrand, sonst
+   saesse sie eingerueckt gegenueber Ueberschrift und Schlussabsatz. */
+.schriftstueck .faq { max-width: none; margin-top: 8px; }
+.schriftstueck .faq-punkt h3 { font-size: clamp(17px, 1.8vw, 19px); margin: 0 0 8px; }
 
 .kauf-hinweis {
   max-width: 640px;
