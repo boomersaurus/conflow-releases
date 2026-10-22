@@ -48,17 +48,33 @@
 
   <section class="kauf-block grau" id="kaufen">
     <div class="mitte">
+      <p class="aktion-band" id="aktion-halloween26" hidden>
+        <strong>Halloween-Nachlass:</strong> 13 € weniger, nur bis 31. Oktober.
+        Der Nachlass wird im Bezahlfenster automatisch abgezogen.
+      </p>
+
       <div class="preis-paar preis-einzeln">
 
         <div class="preis-karte hervor">
           <h3>ConFlow Pro</h3>
-          <p class="betrag">49,00 €</p>
+          <p class="betrag"><s class="betrag-alt" id="betrag-alt" hidden>49,00 €</s><span id="betrag-jetzt">49,00 €</span></p>
           <p class="betrag-zusatz">pro Jahr</p>
           <ul>
             <li>Ein Schlüssel für zwölf Monate</li>
             <li>Eine Zahlung im Jahr</li>
             <li>Einzelplatzlizenz, auf Ihren Namen</li>
           </ul>
+          <p class="nur-mac">
+            ConFlow läuft ausschließlich auf dem Mac (macOS 10.15 oder neuer). Auf iPhone,
+            iPad, Android-Geräten und Windows-Rechnern läuft es nicht.
+          </p>
+          <div class="mac-pruefung" id="mac-pruefung" hidden>
+            <p>
+              <strong>Sie sind gerade nicht mit einem Mac hier.</strong> Auf diesem Gerät
+              lässt sich ConFlow nicht verwenden, deshalb ist der Kauf hier gesperrt.
+              Öffnen Sie diese Seite bitte auf Ihrem Mac, um ConFlow Pro zu kaufen.
+            </p>
+          </div>
           <button type="button" class="knopf knopf-voll" id="kaufen-pro">Kaufen</button>
         </div>
 
@@ -284,7 +300,7 @@
             ConFlow Pro ist eine <strong>Einzelplatzlizenz</strong>: Der Schlüssel wird auf
             Ihren Namen ausgestellt und gilt für einen Arbeitsplatz. Ihre Daten liegen
             ohnehin auf dem Rechner, an dem Sie arbeiten — sie werden zwischen Geräten nicht
-            abgeglichen, weil ConFlow dafür keine Wolke benutzt. Der genaue Umfang steht in den
+            abgeglichen, weil ConFlow dafür keine Cloud benutzt. Der genaue Umfang steht in den
             <a href="/lizenzbedingungen/">Lizenzbedingungen</a>.
           </p>
         </div>
@@ -362,6 +378,75 @@
   var TOKEN  = 'live_8b4b32f29ca580ac9dc9b944ba2';
   var PREIS  = 'pri_01m0jkzwtda4ktycj08812j5pk';
 
+  // RABATTAKTIONEN (seit 22.10.2026). Der Link traegt nur den Namen der Aktion
+  // (conflow.app/kaufen/?aktion=halloween26), der Paddle-Rabattcode steht hier.
+  // Nach "bis" wird kein Code mehr mitgegeben: Die Seite faellt von selbst auf
+  // den Normalpreis zurueck, ohne Handgriff. Paddle laesst denselben Code zum
+  // selben Zeitpunkt auslaufen -- zwei Sicherungen, keine haengt an der anderen.
+  // Zeitangabe in deutscher Zeit; ab 25.10.2026 gilt Winterzeit (+01:00).
+  var AKTIONEN = {
+    halloween26: {
+      code: 'HALLOWEEN26',
+      bis: Date.parse('2026-11-01T00:00:00+01:00'),
+      preis: '36,00 €',              // nur Anzeige; abgezogen wird bei Paddle
+      hinweis: 'aktion-halloween26'  // id des Hinweises ueber der Preiskarte
+    }
+  };
+
+  function laufendeAktion() {
+    try {
+      var name = new URLSearchParams(location.search).get('aktion');
+      var aktion = name && AKTIONEN[name.toLowerCase()];
+      return aktion && Date.now() < aktion.bis ? aktion : null;
+    } catch (e) {
+      return null;   // im Zweifel Normalpreis, nie ein kaputter Knopf
+    }
+  }
+
+  function aktionscode() {
+    var aktion = laufendeAktion();
+    return aktion ? aktion.code : null;
+  }
+
+  // Sichtbarer Hinweis: nur ueber den Aktionslink und nur bis "bis". Ohne
+  // Skript oder ausserhalb der Aktion bleibt die Seite unveraendert bei 49,00 €.
+  (function () {
+    var aktion = laufendeAktion();
+    if (!aktion) return;
+    var hinweis = document.getElementById(aktion.hinweis);
+    var alt = document.getElementById('betrag-alt');
+    var jetzt = document.getElementById('betrag-jetzt');
+    if (hinweis) hinweis.hidden = false;
+    if (alt && jetzt) {
+      alt.hidden = false;
+      jetzt.textContent = aktion.preis;
+    }
+  })();
+
+  // NUR MAC (22.10.2026). Wer nicht mit einem Mac hier ist, kann nicht kaufen:
+  // Hinweis statt Kaufknopf. iPads melden sich in Safari als Mac --
+  // erkennbar nur an der Beruehrungsflaeche. Im Zweifel gilt ein Geraet als
+  // "kein Mac": ein Mac-Nutzer am falschen Geraet verliert nur einen Umweg,
+  // ein Fehlkauf kostet den Kunden Geld und uns eine Erstattung.
+  function istMac() {
+    try {
+      var kennung = navigator.userAgent || '';
+      var beruehrung = navigator.maxTouchPoints || 0;
+      return /Macintosh/.test(kennung) && !/iPhone|iPad|iPod|Android/.test(kennung)
+        && beruehrung <= 1;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  if (!istMac()) {
+    var pruefung = document.getElementById('mac-pruefung');
+    if (pruefung) pruefung.hidden = false;
+    knopf.disabled = true;
+    knopf.textContent = 'Kauf nur am Mac';
+    return;   // kein Klick-Handler, kein Paddle -- auf diesem Geraet gibt es nichts zu kaufen
+  }
+
   var laeuft = false;   // gegen Doppelklicks waehrend des Nachladens
   var bereit = false;   // Paddle.Initialize nur einmal
 
@@ -375,10 +460,13 @@
 
   function oeffnen() {
     try {
-      Paddle.Checkout.open({
+      var auftrag = {
         items: [{ priceId: PREIS, quantity: 1 }],
         settings: { locale: 'de', displayMode: 'overlay' }
-      });
+      };
+      var code = aktionscode();
+      if (code) auftrag.discountCode = code;
+      Paddle.Checkout.open(auftrag);
     } catch (e) {
       ausfall();
     }

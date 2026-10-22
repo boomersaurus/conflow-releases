@@ -48,6 +48,8 @@
   --accent: #0071e3;
   --accent-hover: #0077ed;
   --ok: #1d7a3d;
+  --aktion: #b45309;      /* Rabattaktion (Halloween-Orange), Kontrast > 4.5:1 auf Weiss */
+  --aktion-bg: #fff4e6;
 
   --schatten: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.08);
   --schatten-tafel: 0 -18px 44px rgba(0, 0, 0, 0.10), 0 -1px 0 rgba(0, 0, 0, 0.06);
@@ -73,6 +75,8 @@
     --accent: #2997ff;
     --accent-hover: #47a3ff;
     --ok: #30d158;
+    --aktion: #ff9f43;
+    --aktion-bg: #2a1d10;
     --schatten: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.5);
     --schatten-tafel: 0 -18px 44px rgba(0, 0, 0, 0.55), 0 -1px 0 rgba(255, 255, 255, 0.06);
   }
@@ -126,7 +130,7 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 .wortmarke { font-weight: 650; font-size: 19px; letter-spacing: -0.01em; color: var(--text); }
 .wortmarke:hover { text-decoration: none; }
 .kopf nav { display: flex; align-items: center; gap: 28px; font-size: 14px; }
-.kopf nav a { color: var(--text-muted); }
+.kopf nav a { color: var(--text-muted); white-space: nowrap; }
 .kopf nav a:hover { color: var(--text); text-decoration: none; }
 
 /* ---------- Schaltflaechen ---------- */
@@ -527,7 +531,7 @@ button.knopf:disabled { opacity: 0.55; cursor: default; }
   color: var(--text-muted);
 }
 .fuss .mitte { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
-.fuss nav { display: flex; gap: 24px; }
+.fuss nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 .fuss a { color: var(--text-muted); }
 .fuss a:hover { color: var(--text); }
 
@@ -651,6 +655,40 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
   color: var(--text-muted);
 }
 
+/* Nur-Mac-Hinweis an der Preiskarte (22.10.2026). Die Rueckfrage traegt im HTML
+   `hidden` -- deshalb kein `display` an .mac-pruefung. */
+.nur-mac { font-size: 14px; color: var(--text-muted); margin: 0 0 16px; }
+.mac-pruefung {
+  border: 1px solid var(--aktion);
+  border-radius: var(--radius);
+  background: var(--aktion-bg);
+  padding: 14px 16px;
+  margin: 0 0 16px;
+  font-size: 14px;
+}
+.mac-pruefung p { margin: 0; }
+
+/* Rabattaktion auf der Kaufseite (seit 22.10.2026). Hinweis und alter Preis
+   tragen im HTML `hidden` und werden nur per Skript eingeblendet -- deshalb hier
+   kein `display`, sonst hebelte die Klasse das `hidden` aus. */
+.aktion-band {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  padding: 14px 20px;
+  border: 1px solid var(--aktion);
+  border-radius: var(--radius);
+  background: var(--aktion-bg);
+  text-align: center;
+  font-size: 15px;
+}
+.aktion-band strong { color: var(--aktion); }
+.betrag-alt {
+  color: var(--text-muted);
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
 @media (max-width: 900px) {
   .zweispaltig { grid-template-columns: 1fr; }
   .kauf-block { padding: 48px 0; }
@@ -688,10 +726,23 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
   .blatt-oben { margin-top: 18px; }
   .blatt img { height: auto; width: 100%; }
   .hinweis-scrollen { display: none; }
-  .dreier, .preis-paar { grid-template-columns: 1fr; }
+  /* minmax(0, …): sonst waechst die Spalte auf die Breite des laengsten
+     Inhalts und die Preiskarte ragt bei 320px aus dem Bild (22.10.2026). */
+  .dreier, .preis-paar { grid-template-columns: minmax(0, 1fr); }
   .kopf nav { gap: 18px; font-size: 13px; }
   .kopf nav a.nur-breit { display: none; }
   .fuss .mitte { flex-direction: column; text-align: center; }
+  .fuss nav { justify-content: center; }
+}
+
+/* Handybreite (22.10.2026). Vorher brachen Kopfzeilen-Verweise in zwei Zeilen
+   um und ragten aus der 52px hohen Leiste; die Fusszeilen-Verweise brachen gar
+   nicht um und machten Kauf- und Startseite seitlich verschiebbar. */
+@media (max-width: 420px) {
+  .mitte { padding: 0 16px; }
+  .kopf .mitte { gap: 12px; }
+  .kopf nav { gap: 14px; font-size: 12.5px; }
+  .wortmarke { font-size: 17px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
