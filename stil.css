@@ -682,7 +682,13 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
   font-size: 15px;
 }
 .aktion-band strong { color: var(--aktion); }
-.aktion-band:not([hidden]) { display: flex; align-items: center; gap: 16px; text-align: left; }
+.aktion-band:not([hidden]) { display: flex; align-items: center; gap: 18px; }
+.aktion-band span { flex: 1 1 auto; text-align: justify; hyphens: auto; }
+@media (max-width: 420px) {
+  .aktion-band { padding: 12px 14px; }
+  .aktion-band:not([hidden]) { gap: 12px; }
+  .aktion-bild { width: 48px; height: 48px; }
+}
 .aktion-bild { flex: none; width: 64px; height: 64px; border-radius: 50%; }
 .betrag-alt {
   color: var(--text-muted);
