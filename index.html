@@ -293,7 +293,18 @@
             <li>Erinnerung an fällige Abrechnungszeiträume</li>
             <li>Umzug auf einen neuen Mac</li>
           </ul>
-          <a class="knopf knopf-leer" href="https://github.com/boomersaurus/conflow-releases/releases/download/v2.1.16P/ConFlow-2.1.16P.dmg">Kostenlos laden</a>
+          <p class="nur-mac">
+            ConFlow läuft ausschließlich auf dem Mac (macOS 10.15 oder neuer). Auf iPhone,
+            iPad, Android-Geräten und Windows-Rechnern läuft es nicht.
+          </p>
+          <div class="mac-pruefung" data-nur-mac-hinweis hidden>
+            <p>
+              <strong>Sie sind gerade nicht mit einem Mac hier.</strong> Auf diesem Gerät
+              lässt sich ConFlow nicht verwenden, deshalb ist der Download hier gesperrt.
+              Öffnen Sie diese Seite bitte auf Ihrem Mac, um ConFlow zu laden.
+            </p>
+          </div>
+          <a data-nur-mac-download data-nur-mac-text="Download nur am Mac" class="knopf knopf-leer" href="https://github.com/boomersaurus/conflow-releases/releases/download/v2.1.16P/ConFlow-2.1.16P.dmg">Kostenlos laden</a>
         </div>
         <div class="preis-karte hervor">
           <h3>PRO</h3>
@@ -365,5 +376,24 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  function istMac() {
+    try {
+      var kennung = navigator.userAgent || '';
+      return /Macintosh/.test(kennung) && !/iPhone|iPad|iPod|Android/.test(kennung)
+        && (navigator.maxTouchPoints || 0) <= 1;
+    } catch (e) { return false; }
+  }
+  if (istMac()) return;
+  document.querySelectorAll('[data-nur-mac-hinweis]').forEach(function (h) { h.hidden = false; });
+  document.querySelectorAll('a[data-nur-mac-download]').forEach(function (a) {
+    a.removeAttribute('href');
+    a.setAttribute('aria-disabled', 'true');
+    a.classList.add('gesperrt');
+    if (a.dataset.nurMacText) a.textContent = a.dataset.nurMacText;
+  });
+})();
+</script>
 </body>
 </html>

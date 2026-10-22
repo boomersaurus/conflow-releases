@@ -667,6 +667,9 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
   font-size: 14px;
 }
 .mac-pruefung p { margin: 0; }
+/* Gesperrter Download auf Geraeten ohne Mac (gleiches Bild wie der gesperrte Kaufknopf). */
+a.gesperrt { pointer-events: none; cursor: default; opacity: 0.55; }
+a.gesperrt.knopf { opacity: 0.55; }
 
 /* Rabattaktion auf der Kaufseite (seit 22.10.2026). Hinweis und alter Preis
    tragen im HTML `hidden` und werden nur per Skript eingeblendet -- deshalb hier
