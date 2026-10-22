@@ -27,11 +27,20 @@
   Rechnername festgeschrieben steht -- und er ueberlebt es, wenn die Domain
   eines Tages wieder verschwindet.
 
+  ZAEHLUNG UEBER DEN KURZLINK (21.10.2026, "Upgrade-Tracking")
+  Seit diesem Tag fuehrt die Seite nicht mehr direkt auf ../kaufen/, sondern
+  ueber https://go.conflow.app/programm (Short.io), und der zeigt auf
+  https://conflow.app/kaufen/. So zaehlt Short.io jeden Klick auf
+  "Zur Kaufseite" im Programm; das Cockpit zeigt ihn neben den Verkaeufen.
+  Das Programm selbst sendet dabei nichts -- es oeffnet nur diese Seite im
+  Browser. Faellt Short.io je weg, hier beide Stellen zurueck auf
+  "../kaufen/" stellen; ausgelieferte Programmfassungen merken davon nichts.
+
   Diese Datei niemals umbenennen oder verschieben.
   ============================================================================
 -->
 
-<meta http-equiv="refresh" content="0; url=../kaufen/">
+<meta http-equiv="refresh" content="0; url=https://go.conflow.app/programm">
 
 <style>
   /* Ohne fremde Schriften und ohne eigenes Stylesheet: Diese Seite muss auch
@@ -70,7 +79,7 @@
     <p>Sie werden zur Kaufseite weitergeleitet.</p>
     <!-- Zweite Stelle mit der Zieladresse. Der sichtbare Verweis ist die
          Rueckfallebene, falls die automatische Weiterleitung nicht greift. -->
-    <a href="../kaufen/">Weiter zur Kaufseite</a>
+    <a href="https://go.conflow.app/programm">Weiter zur Kaufseite</a>
   </div>
 </body>
 </html>
