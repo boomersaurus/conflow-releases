@@ -22,6 +22,7 @@ Wichtige Fakten:
 
 ## Wissen
 
+- [Rechnungsprogramm für den Mac](https://conflow.app/wissen/rechnungsprogramm-mac/): drei Wege im Vergleich, Pflichtangaben, Kleinunternehmer, E-Rechnung, ohne Abo
 - [E-Rechnung: Was Berater ab wann tun müssen](https://conflow.app/wissen/e-rechnung-pflicht/): Stichtage 2025, 2027 und 2028, XRechnung und ZUGFeRD
 - [Einnahmen-Überschussrechnung für selbstständige Berater](https://conflow.app/wissen/euer-selbststaendige/)
 - [Der Leistungsnachweis: Wie Berater ihre Zeit belegen](https://conflow.app/wissen/leistungsnachweis/)

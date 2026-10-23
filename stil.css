@@ -645,7 +645,10 @@ body.kaufseite { padding-top: var(--kopfhoehe); }
 /* Auf /fragen/ steht die Liste in der Textspalte: kein eigener Seitenrand, sonst
    saesse sie eingerueckt gegenueber Ueberschrift und Schlussabsatz. */
 .schriftstueck .faq { max-width: none; margin-top: 8px; }
-.schriftstueck .faq-punkt h3 { font-size: clamp(17px, 1.8vw, 19px); margin: 0 0 8px; }
+/* Seit 23.10.2026 stehen die Fragen auf /fragen/ als zweite Ueberschriftsebene (vorher h3:
+   die Folge h1 -> h3 bemaengelte die Barrierefreiheitspruefung). Die Regel bildet die
+   bisherige h3-Darstellung exakt nach, damit sich am Aussehen nichts aendert. */
+.schriftstueck .faq-punkt h2 { font-size: clamp(17px, 1.8vw, 19px); font-weight: 620; margin: 0 0 8px; letter-spacing: normal; color: var(--text); }
 
 .kauf-hinweis {
   max-width: 640px;
