@@ -1,15 +1,15 @@
 {
-  "version": "2.2.0",
-  "notes": "Neu in 2.2: Tagessatz mit Staffel je Kalendermonat und Mindestabrechnung je Einsatztag, eine Mindestabnahme, die in der Rechnung mitrechnet (PRO), und ein direkter Weg zur Kaufseite aus dem Programm.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
-  "pub_date": "2026-10-22T12:25:49Z",
+  "version": "2.3.0",
+  "notes": "Neu in 2.3: XRechnung für öffentliche Auftraggeber mit Leitweg-ID (PRO), Klienten aus einer Tabelle einlesen (PRO) und Rechnungen per E-Mail jetzt auch mit Apple Mail.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
+  "pub_date": "2026-10-27T10:16:33Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1FPM3NZbEMrOHFBV3NhZllDTjVPTW91N21yclQxVXczemxKUy9xZG9CMUNEUE5XMG42WDJlSzlFd3lDbGpuMXpVNm02b2NyUE1UZFp3YmtmUGpFc1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjcxNzk3CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CmpUT0pPQXlId1ExNERySlFmcVpWVW5xK2trMnpCeENRN0lMd0w4M0NoOVgrL0tBQWVhVmhoWGVqanRvKzVWTU90c3JHTFp6UzE5cG5DcloxcTFtYkF3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.2.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2RxV1BMdVhlUHc3U0IyQlllWlg1K2MvRXExQ2lETHlQUEpvdXdRRHEwcjM0NXBQSHZKREFuRk0wTkFGenVYQVBJemg1d0dXdWNtaGZQdzBSakhDR2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDk1OTUzCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CndJaVh6NHAyaithVmFqZ3RQVWhTVGcwSVhkVGxyckloR1RkNVQ4MlkyMVRtVHlkUWtaNHBuNGNLdURSQWQ3SFdDc2N0K0N3bmRETUpSamlTMmJzM0NBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.3.0P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1FPM3NZbEMrOHFBV3NhZllDTjVPTW91N21yclQxVXczemxKUy9xZG9CMUNEUE5XMG42WDJlSzlFd3lDbGpuMXpVNm02b2NyUE1UZFp3YmtmUGpFc1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjcxNzk3CWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CmpUT0pPQXlId1ExNERySlFmcVpWVW5xK2trMnpCeENRN0lMd0w4M0NoOVgrL0tBQWVhVmhoWGVqanRvKzVWTU90c3JHTFp6UzE5cG5DcloxcTFtYkF3PT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.2.0P/ConFlow.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2RxV1BMdVhlUHc3U0IyQlllWlg1K2MvRXExQ2lETHlQUEpvdXdRRHEwcjM0NXBQSHZKREFuRk0wTkFGenVYQVBJemg1d0dXdWNtaGZQdzBSakhDR2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDk1OTUzCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CndJaVh6NHAyaithVmFqZ3RQVWhTVGcwSVhkVGxyckloR1RkNVQ4MlkyMVRtVHlkUWtaNHBuNGNLdURSQWQ3SFdDc2N0K0N3bmRETUpSamlTMmJzM0NBPT0K",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.3.0P/ConFlow.app.tar.gz"
     }
   }
 }
