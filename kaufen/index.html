@@ -68,6 +68,7 @@
             <li>Ein Schlüssel für zwölf Monate</li>
             <li>Eine Zahlung im Jahr</li>
             <li>Einzelplatzlizenz, auf Ihren Namen</li>
+            <li>Mit Rechnung, als Betriebsausgabe absetzbar</li>
           </ul>
           <p class="nur-mac">
             ConFlow läuft ausschließlich auf dem Mac (macOS 10.15 oder neuer). Auf iPhone,
@@ -80,9 +81,21 @@
               Öffnen Sie diese Seite bitte auf Ihrem Mac, um ConFlow Pro zu kaufen.
             </p>
           </div>
-          <button type="button" class="knopf knopf-voll" id="kaufen-pro">Kaufen</button>
+          <button type="button" class="knopf knopf-voll kaufen-knopf" id="kaufen-pro" data-preis="pri_01m0jkzwtda4ktycj08812j5pk" data-aktion="ja">Kaufen</button>
         </div>
 
+      </div>
+
+      <div class="laufzeiten">
+        <p class="laufzeiten-titel">Lieber gleich länger, mit einer Zahlung:</p>
+        <div class="laufzeit">
+          <div><strong>2 Jahre · 89,00 €</strong><span>Ein Schlüssel für 24 Monate, entspricht 44,50 € im Jahr</span></div>
+          <button type="button" class="knopf kaufen-knopf" data-preis="pri_01m5w0v0hcyzyrztbd7xdr9hrk">Kaufen</button>
+        </div>
+        <div class="laufzeit">
+          <div><strong>3 Jahre · 119,00 €</strong><span>Ein Schlüssel für 36 Monate, entspricht 39,67 € im Jahr</span></div>
+          <button type="button" class="knopf kaufen-knopf" data-preis="pri_01m5w0w7yt510v7eqd3r9y1b5c">Kaufen</button>
+        </div>
       </div>
 
       <p class="kauf-lieferzeit">
@@ -104,7 +117,7 @@
 
       <p class="kauf-hinweis">
         BASIC bleibt dauerhaft kostenlos — Sie müssen nichts kaufen, um mit ConFlow
-        zu arbeiten. <a data-nur-mac-download data-nur-mac-text="ConFlow laden (nur am Mac)" href="https://github.com/boomersaurus/conflow-releases/releases/download/v2.2.0P/ConFlow-2.2.0P.dmg">ConFlow laden</a>.
+        zu arbeiten. <a data-nur-mac-download data-nur-mac-text="ConFlow laden (nur am Mac)" href="https://github.com/boomersaurus/conflow-releases/releases/download/v2.3.0P/ConFlow-2.3.0P.dmg">ConFlow laden</a>.
       </p>
     </div>
   </section>
@@ -113,7 +126,7 @@
     <div class="mitte">
       <h2>Was Sie mit Pro zusätzlich bekommen</h2>
       <p class="kauf-vorspann">
-        Neun Bausteine. Alles andere in ConFlow ist heute in der kostenlosen
+        Zwölf Bausteine. Alles andere in ConFlow ist heute in der kostenlosen
         Fassung BASIC enthalten.
       </p>
       <p class="kleingedrucktes">
@@ -162,11 +175,12 @@
         </ul>
         <ul class="merkmale">
           <li>
-            <div class="merkmal-was">E-Rechnung nach EN 16931</div>
+            <div class="merkmal-was">E-Rechnung und XRechnung</div>
             <div class="merkmal-wozu">
               Spätestens ab 2028 müssen Rechnungen an Geschäftskunden maschinenlesbar
-              sein.
-              ConFlow legt den Datensatz schon heute in die Rechnung.
+              sein. ConFlow legt den Datensatz nach EN 16931 schon heute in die Rechnung.
+              Für Behörden, Kommunen und viele Kliniken speichert ConFlow die Rechnung
+              zusätzlich als XRechnung, samt Prüfung der Leitweg-ID.
             </div>
           </li>
           <li>
@@ -190,6 +204,14 @@
               Zeiten, Gesprächsnotizen und Auslagen eines Mandats verschlüsselt als
               Datei weitergeben und beim Empfänger einlesen — mit Vorschau und ohne
               doppelte Erfassung.
+            </div>
+          </li>
+          <li>
+            <div class="merkmal-was">Klienten einlesen</div>
+            <div class="merkmal-wozu">
+              Wer seine Kunden schon in Excel, Numbers oder Outlook führt, liest sie als
+              CSV-Tabelle ein. ConFlow ordnet die Spalten selbst zu; vorhandene Klienten
+              werden übersprungen.
             </div>
           </li>
           <li>
@@ -219,7 +241,7 @@
       </div>
 
       <p class="kauf-hinweis">
-        Kostenlos bleiben: Klienten und Mandate, Zeiterfassung mit Reisekosten und
+        Heute in BASIC enthalten: Klienten und Mandate, Zeiterfassung mit Reisekosten und
         Auslagen, Rechnungen nach DIN 5008 samt Abschlags-, Schluss- und
         Stornorechnung, Zahlungsstatus, Wiedervorlage und Pipeline, der
         Leistungsnachweis für Ihre Klienten, eine Erinnerung an fällige
@@ -274,9 +296,10 @@
           <h3>Was passiert, wenn die Lizenz ausläuft?</h3>
           <p>
             ConFlow arbeitet als BASIC weiter. Ihre Daten bleiben vollständig
-            erhalten — es wird nichts gesperrt, gelöscht oder unlesbar. Die
-            Pro-Funktionen sind wieder da, sobald ein neuer Schlüssel eingetragen
-            ist.
+            erhalten — es wird nichts gesperrt, gelöscht oder unlesbar. Welche
+            Funktionen BASIC dann umfasst, richtet sich danach, wann ConFlow auf
+            Ihrem Rechner eingerichtet wurde. Die Pro-Funktionen sind wieder da,
+            sobald ein neuer Schlüssel eingetragen ist.
           </p>
         </div>
 
@@ -376,12 +399,12 @@
 
 <script>
 (function () {
-  var knopf = document.getElementById('kaufen-pro');
-  if (!knopf) return;
+  var knoepfe = [].slice.call(document.querySelectorAll('.kaufen-knopf[data-preis]'));
+  if (!knoepfe.length) return;
 
   var QUELLE = 'https://cdn.paddle.com/paddle/v2/paddle.js';
   var TOKEN  = 'live_8b4b32f29ca580ac9dc9b944ba2';
-  var PREIS  = 'pri_01m0jkzwtda4ktycj08812j5pk';
+  // Die Preiskennung steht je Knopf in data-preis (Jahres-, Zwei-, Dreijahreslizenz).
 
   // RABATTAKTIONEN (seit 22.10.2026). Der Link traegt nur den Namen der Aktion
   // (conflow.app/kaufen/?aktion=halloween26), der Paddle-Rabattcode steht hier.
@@ -447,8 +470,7 @@
   if (!istMac()) {
     var pruefung = document.getElementById('mac-pruefung');
     if (pruefung) pruefung.hidden = false;
-    knopf.disabled = true;
-    knopf.textContent = 'Kauf nur am Mac';
+    knoepfe.forEach(function (k) { k.disabled = true; k.textContent = 'Kauf nur am Mac'; });
     return;   // kein Klick-Handler, kein Paddle -- auf diesem Geraet gibt es nichts zu kaufen
   }
 
@@ -457,19 +479,18 @@
 
   // Ein Knopf, der nichts tut, ist schlimmer als ein abgeschalteter Knopf.
   function ausfall() {
-    knopf.disabled = true;
-    knopf.textContent = 'Kauf gerade nicht möglich';
+    knoepfe.forEach(function (k) { k.disabled = true; k.textContent = 'Kauf gerade nicht möglich'; });
     var hinweis = document.getElementById('kauf-ausfall');
     if (hinweis) hinweis.hidden = false;
   }
 
-  function oeffnen() {
+  function oeffnen(knopf) {
     try {
       var auftrag = {
-        items: [{ priceId: PREIS, quantity: 1 }],
+        items: [{ priceId: knopf.dataset.preis, quantity: 1 }],
         settings: { locale: 'de', displayMode: 'overlay' }
       };
-      var code = aktionscode();
+      var code = knopf.dataset.aktion ? aktionscode() : null;
       if (code) auftrag.discountCode = code;
       Paddle.Checkout.open(auftrag);
     } catch (e) {
@@ -485,10 +506,9 @@
     document.head.appendChild(skript);
   }
 
-  knopf.addEventListener('click', function () {
+  knoepfe.forEach(function (knopf) { knopf.addEventListener('click', function () {
     if (laeuft) return;
-
-    if (bereit) { oeffnen(); return; }
+    if (bereit) { oeffnen(knopf); return; }
 
     laeuft = true;
     knopf.textContent = 'Einen Moment …';
@@ -505,9 +525,9 @@
       bereit = true;
       laeuft = false;
       knopf.textContent = 'Kaufen';
-      oeffnen();
+      oeffnen(knopf);
     });
-  });
+  }); });
 })();
 </script>
 

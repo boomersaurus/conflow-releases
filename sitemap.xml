@@ -4,8 +4,10 @@
   <url><loc>https://conflow.app/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://conflow.app/kaufen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/fragen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://conflow.app/gruenderjahr/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://conflow.app/wissen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://conflow.app/praxis/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://conflow.app/praxis/vom-angebot-zum-mandat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/praxis/warum-die-daten-lokal-bleiben/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/praxis/die-erste-rechnung/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/praxis/was-hatten-wir-eigentlich-vereinbart/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
@@ -13,6 +15,12 @@
   <url><loc>https://conflow.app/praxis/reisezeit-und-kilometer-je-mandat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/praxis/auslagen-getrennt-von-eigenen-ausgaben/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/wissen/rechnungsprogramm-mac/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conflow.app/wissen/rechnungsprogramm-ohne-abo/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conflow.app/wissen/rechnungsprogramm-kleinunternehmer/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conflow.app/wissen/honorarrechnung/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conflow.app/wissen/rechnung-coaching/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conflow.app/wissen/stundensatz-berechnen/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://conflow.app/wissen/zeiterfassung-mac/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/wissen/e-rechnung-pflicht/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://conflow.app/wissen/euer-selbststaendige/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://conflow.app/wissen/leistungsnachweis/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>

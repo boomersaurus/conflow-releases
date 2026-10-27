@@ -23,6 +23,12 @@ Wichtige Fakten:
 ## Wissen
 
 - [Rechnungsprogramm für den Mac](https://conflow.app/wissen/rechnungsprogramm-mac/): drei Wege im Vergleich, Pflichtangaben, Kleinunternehmer, E-Rechnung, ohne Abo
+- [Rechnungsprogramm ohne Abo](https://conflow.app/wissen/rechnungsprogramm-ohne-abo/): Abo, Einmalkauf oder dauerhaft kostenlos; was passiert, wenn man nicht mehr zahlt
+- [Rechnungsprogramm für Kleinunternehmer](https://conflow.app/wissen/rechnungsprogramm-kleinunternehmer/): Hinweis nach § 19 UStG, Umsatzgrenzen seit 2025, E-Rechnung
+- [Honorarrechnung schreiben](https://conflow.app/wissen/honorarrechnung/): Pflichtangaben, Reisekosten und Auslagen, Beispiel
+- [Rechnung für Coaching und Supervision](https://conflow.app/wissen/rechnung-coaching/): Leistungsbeschreibung, Umsatzsteuer, Rechnungsempfänger, Vertraulichkeit
+- [Stundensatz und Tagessatz berechnen](https://conflow.app/wissen/stundensatz-berechnen/): vom Einkommensziel zum Satz, mit Beispiel
+- [Zeiterfassung am Mac für Selbstständige](https://conflow.app/wissen/zeiterfassung-mac/): Wege im Vergleich, Zeit je Mandat bis zur Rechnung
 - [E-Rechnung: Was Berater ab wann tun müssen](https://conflow.app/wissen/e-rechnung-pflicht/): Stichtage 2025, 2027 und 2028, XRechnung und ZUGFeRD
 - [Einnahmen-Überschussrechnung für selbstständige Berater](https://conflow.app/wissen/euer-selbststaendige/)
 - [Der Leistungsnachweis: Wie Berater ihre Zeit belegen](https://conflow.app/wissen/leistungsnachweis/)
