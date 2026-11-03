@@ -4,11 +4,11 @@
   "pub_date": "PUB_DATE_BEI_VEROEFFENTLICHUNG",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "SIGNATUR_AUS_ConFlow.app.tar.gz.sig",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1hNVFA4eWxTQkh1V0c0UUw0VUJDejU5WlR5WUp1c2svZUVZWU9aczNsYytTcE85aWl5YUFpc0dRY3VSMktsa05yUGRNV1lPNDF1TG95c2k2MVdLR2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzEyNjkyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CkN2WTZKdzEwVTlaOUV6WXpGSDlYVDhHQWF3akhIZk0xaU1Gc2wxOXpTOElmZTZMYjJsNE5hV3g1V0VrLy9ocVBUbVBPenU5MGtGYzNFeWJqTTJYcURBPT0K",
       "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.4.0P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "SIGNATUR_AUS_ConFlow.app.tar.gz.sig",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1hNVFA4eWxTQkh1V0c0UUw0VUJDejU5WlR5WUp1c2svZUVZWU9aczNsYytTcE85aWl5YUFpc0dRY3VSMktsa05yUGRNV1lPNDF1TG95c2k2MVdLR2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzEyNjkyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CkN2WTZKdzEwVTlaOUV6WXpGSDlYVDhHQWF3akhIZk0xaU1Gc2wxOXpTOElmZTZMYjJsNE5hV3g1V0VrLy9ocVBUbVBPenU5MGtGYzNFeWJqTTJYcURBPT0K",
       "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.4.0P/ConFlow.app.tar.gz"
     }
   }
