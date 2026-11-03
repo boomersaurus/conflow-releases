@@ -1,15 +1,15 @@
 {
-  "version": "2.3.0",
-  "notes": "Neu in 2.3: XRechnung für öffentliche Auftraggeber mit Leitweg-ID (PRO), Klienten aus einer Tabelle einlesen (PRO) und Rechnungen per E-Mail jetzt auch mit Apple Mail.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
-  "pub_date": "2026-10-27T10:16:33Z",
+  "version": "2.4.0",
+  "notes": "Neu in 2.4: Die ersten 30 Tage stehen Ihnen alle PRO-Funktionen zur Verfügung, auch wenn Sie ConFlow schon nutzen. Dazu: Erste Schritte für den Einstieg, Klienten und Rechnungen als Tabelle speichern, XRechnung auch für Korrekturen und „Wunsch äußern…“ im Menü Hilfe. Wer ConFlow schon nutzt, behält alle bisherigen BASIC-Funktionen.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
+  "pub_date": "PUB_DATE_BEI_VEROEFFENTLICHUNG",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2RxV1BMdVhlUHc3U0IyQlllWlg1K2MvRXExQ2lETHlQUEpvdXdRRHEwcjM0NXBQSHZKREFuRk0wTkFGenVYQVBJemg1d0dXdWNtaGZQdzBSakhDR2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDk1OTUzCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CndJaVh6NHAyaithVmFqZ3RQVWhTVGcwSVhkVGxyckloR1RkNVQ4MlkyMVRtVHlkUWtaNHBuNGNLdURSQWQ3SFdDc2N0K0N3bmRETUpSamlTMmJzM0NBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.3.0P/ConFlow.app.tar.gz"
+      "signature": "SIGNATUR_AUS_ConFlow.app.tar.gz.sig",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.4.0P/ConFlow.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb2RxV1BMdVhlUHc3U0IyQlllWlg1K2MvRXExQ2lETHlQUEpvdXdRRHEwcjM0NXBQSHZKREFuRk0wTkFGenVYQVBJemg1d0dXdWNtaGZQdzBSakhDR2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDk1OTUzCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CndJaVh6NHAyaithVmFqZ3RQVWhTVGcwSVhkVGxyckloR1RkNVQ4MlkyMVRtVHlkUWtaNHBuNGNLdURSQWQ3SFdDc2N0K0N3bmRETUpSamlTMmJzM0NBPT0K",
-      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.3.0P/ConFlow.app.tar.gz"
+      "signature": "SIGNATUR_AUS_ConFlow.app.tar.gz.sig",
+      "url": "https://github.com/boomersaurus/conflow-releases/releases/download/v2.4.0P/ConFlow.app.tar.gz"
     }
   }
 }
