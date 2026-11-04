@@ -1,7 +1,7 @@
 {
   "version": "2.4.0",
   "notes": "Neu in 2.4: Die ersten 30 Tage stehen Ihnen alle PRO-Funktionen zur Verfügung, auch wenn Sie ConFlow schon nutzen. Dazu: Erste Schritte für den Einstieg, Klienten und Rechnungen als Tabelle speichern, XRechnung auch für Korrekturen und „Wunsch äußern…“ im Menü Hilfe. Wer ConFlow schon nutzt, behält alle bisherigen BASIC-Funktionen.\n\nSigniert und bei Apple beglaubigt -- Programm und Installationsabbild.",
-  "pub_date": "PUB_DATE_BEI_VEROEFFENTLICHUNG",
+  "pub_date": "2026-11-04T09:59:49Z",
   "platforms": {
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTnovcVBXenVNb1hNVFA4eWxTQkh1V0c0UUw0VUJDejU5WlR5WUp1c2svZUVZWU9aczNsYytTcE85aWl5YUFpc0dRY3VSMktsa05yUGRNV1lPNDF1TG95c2k2MVdLR2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzEyNjkyCWZpbGU6Q29uRmxvdy5hcHAudGFyLmd6CkN2WTZKdzEwVTlaOUV6WXpGSDlYVDhHQWF3akhIZk0xaU1Gc2wxOXpTOElmZTZMYjJsNE5hV3g1V0VrLy9ocVBUbVBPenU5MGtGYzNFeWJqTTJYcURBPT0K",
