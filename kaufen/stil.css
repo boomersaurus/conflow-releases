@@ -534,6 +534,9 @@ button.knopf:disabled { opacity: 0.55; cursor: default; }
 .fuss nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 .fuss a { color: var(--text-muted); }
 .fuss a:hover { color: var(--text); }
+/* Wissenszeile in der Fusszeile der Startseite (seit 08.11.2026): eigene volle Zeile ueber
+   Anbieterhinweis und Rechtsverweisen, sonst gleicher Stil. */
+.fuss .fuss-wissen { flex-basis: 100%; order: -1; }
 
 /* ============================================================
    Kaufseite (kaufen.html)
